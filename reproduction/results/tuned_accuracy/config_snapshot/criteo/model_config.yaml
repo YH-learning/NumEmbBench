@@ -1,0 +1,2494 @@
+Base:
+  model_root: __CHECKPOINT_ROOT__/criteo
+  num_workers: 3
+  verbose: 1
+  early_stop_patience: 2
+  pickle_feature_encoder: false
+  save_best_only: true
+  eval_steps: null
+  debug_mode: false
+  group_id: null
+  use_features: null
+  feature_specs: null
+  feature_config: null
+  dataset_id: Criteo_x4_NumEmbZScoreV2
+  loss: binary_crossentropy
+  metrics:
+  - logloss
+  - AUC
+  task: binary_classification
+  optimizer: adam
+  learning_rate: 0.001
+  embedding_regularizer: 0
+  net_regularizer: 0
+  batch_size: 4096
+  embedding_dim: 16
+  net_dropout: 0
+  batch_norm: false
+  epochs: 100
+  numeric_embedding_plugins:
+  - numemb_plugin
+  shuffle: true
+  seed: 2026
+  monitor: AUC
+  monitor_mode: max
+  streaming: false
+  data_format: parquet
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_field:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: field
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_linear:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: linear
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_linear_relu:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: linear_relu
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_quantile_bucket:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: quantile_bucket
+  numeric_embedding_params:
+    embedding_init_std: 1.0e-05
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_log_squared_bucket:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: log_squared_bucket
+  numeric_embedding_params:
+    embedding_init_std: 0.0001
+    vocab_path: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/log_squared_bucket_vocab.json
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_autodis:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: autodis
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    temperature: 0.05
+    residual_weight: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_ple_a:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: A
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_ple_b:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_ple_relu:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: piecewise_linear_relu
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_periodic:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: periodic
+  numeric_embedding_params:
+    n_frequencies: 8
+    frequency_init_scale: 0.01
+    lite: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_plr:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: plr
+  numeric_embedding_params:
+    n_frequencies: 16
+    frequency_init_scale: 0.05
+    lite: false
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_narydis_lite:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: narydis_lite
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 16
+    multiplier: 100
+    signed: true
+    pooling: mean
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_bspline:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: bspline
+  numeric_embedding_params:
+    n_basis: 32
+    degree: 3
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_narydis_full:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: narydis_full
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1.0
+    min_temperature: 0.1
+    temperature_decay: 5.0e-05
+    attention_hidden_dims:
+    - 80
+    - 40
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.0
+    ssl_max_samples: 512
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_deer:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: deer
+  numeric_embedding_params:
+    n_bins: 16
+    min_width: 0.0
+    width_temperature: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_dae:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: dae
+  numeric_embedding_params:
+    n_quantiles: 32
+    hidden_dim: 32
+    temperature: 1.0
+    normalize_distances: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_daes_gate:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: daes_gate
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.2
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DNN_daes_tran:
+  model: DNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: daes_tran
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_field:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: field
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_linear:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: linear
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_linear_relu:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: linear_relu
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_quantile_bucket:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: quantile_bucket
+  lr_use_shared_numeric_embedding: true
+  numeric_embedding_params:
+    embedding_init_std: 1.0e-05
+Tuned_criteo_DeepFM_log_squared_bucket:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: log_squared_bucket
+  numeric_embedding_params:
+    embedding_init_std: 0.0001
+    vocab_path: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/log_squared_bucket_vocab.json
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_autodis:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: autodis
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    temperature: 0.05
+    residual_weight: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_ple_a:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: A
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_ple_b:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_ple_relu:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: piecewise_linear_relu
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_periodic:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: periodic
+  numeric_embedding_params:
+    n_frequencies: 8
+    frequency_init_scale: 0.01
+    lite: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_plr:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: plr
+  numeric_embedding_params:
+    n_frequencies: 16
+    frequency_init_scale: 0.05
+    lite: false
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_narydis_lite:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: narydis_lite
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 16
+    multiplier: 100
+    signed: true
+    pooling: mean
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_bspline:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: bspline
+  numeric_embedding_params:
+    n_basis: 32
+    degree: 3
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_narydis_full:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: narydis_full
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1.0
+    min_temperature: 0.1
+    temperature_decay: 5.0e-05
+    attention_hidden_dims:
+    - 80
+    - 40
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.0
+    ssl_max_samples: 512
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_deer:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: deer
+  numeric_embedding_params:
+    n_bins: 16
+    min_width: 0.0
+    width_temperature: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_dae:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: dae
+  numeric_embedding_params:
+    n_quantiles: 32
+    hidden_dim: 32
+    temperature: 1.0
+    normalize_distances: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_daes_gate:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: daes_gate
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.2
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DeepFM_daes_tran:
+  model: DeepFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: daes_tran
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_field:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: field
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_linear:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: linear
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_linear_relu:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: linear_relu
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_quantile_bucket:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: quantile_bucket
+  lr_use_shared_numeric_embedding: true
+  numeric_embedding_params:
+    embedding_init_std: 1.0e-05
+Tuned_criteo_WideDeep_log_squared_bucket:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: log_squared_bucket
+  numeric_embedding_params:
+    embedding_init_std: 0.0001
+    vocab_path: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/log_squared_bucket_vocab.json
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_autodis:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: autodis
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    temperature: 0.05
+    residual_weight: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_ple_a:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: A
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_ple_b:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_ple_relu:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: piecewise_linear_relu
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_periodic:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: periodic
+  numeric_embedding_params:
+    n_frequencies: 8
+    frequency_init_scale: 0.01
+    lite: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_plr:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: plr
+  numeric_embedding_params:
+    n_frequencies: 16
+    frequency_init_scale: 0.05
+    lite: false
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_narydis_lite:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: narydis_lite
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 16
+    multiplier: 100
+    signed: true
+    pooling: mean
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_bspline:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: bspline
+  numeric_embedding_params:
+    n_basis: 32
+    degree: 3
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_narydis_full:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: narydis_full
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1.0
+    min_temperature: 0.1
+    temperature_decay: 5.0e-05
+    attention_hidden_dims:
+    - 80
+    - 40
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.0
+    ssl_max_samples: 512
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_deer:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: deer
+  numeric_embedding_params:
+    n_bins: 16
+    min_width: 0.0
+    width_temperature: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_dae:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: dae
+  numeric_embedding_params:
+    n_quantiles: 32
+    hidden_dim: 32
+    temperature: 1.0
+    normalize_distances: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_daes_gate:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: daes_gate
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.2
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_WideDeep_daes_tran:
+  model: WideDeep
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  numeric_embedding: daes_tran
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_field:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: field
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_linear:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: linear
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_linear_relu:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: linear_relu
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_quantile_bucket:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: quantile_bucket
+  lr_use_shared_numeric_embedding: true
+  numeric_embedding_params:
+    embedding_init_std: 1.0e-05
+Tuned_criteo_NFM_log_squared_bucket:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: log_squared_bucket
+  numeric_embedding_params:
+    embedding_init_std: 0.0001
+    vocab_path: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/log_squared_bucket_vocab.json
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_autodis:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: autodis
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    temperature: 0.05
+    residual_weight: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_ple_a:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: A
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_ple_b:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_ple_relu:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: piecewise_linear_relu
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_periodic:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: periodic
+  numeric_embedding_params:
+    n_frequencies: 8
+    frequency_init_scale: 0.01
+    lite: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_plr:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: plr
+  numeric_embedding_params:
+    n_frequencies: 16
+    frequency_init_scale: 0.05
+    lite: false
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_narydis_lite:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: narydis_lite
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 16
+    multiplier: 100
+    signed: true
+    pooling: mean
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_bspline:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: bspline
+  numeric_embedding_params:
+    n_basis: 32
+    degree: 3
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_narydis_full:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: narydis_full
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1.0
+    min_temperature: 0.1
+    temperature_decay: 5.0e-05
+    attention_hidden_dims:
+    - 80
+    - 40
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.0
+    ssl_max_samples: 512
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_deer:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: deer
+  numeric_embedding_params:
+    n_bins: 16
+    min_width: 0.0
+    width_temperature: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_dae:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: dae
+  numeric_embedding_params:
+    n_quantiles: 32
+    hidden_dim: 32
+    temperature: 1.0
+    normalize_distances: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_daes_gate:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: daes_gate
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.2
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_NFM_daes_tran:
+  model: NFM
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  embedding_dropout: 0
+  numeric_embedding: daes_tran
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_field:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: field
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_linear:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: linear
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_linear_relu:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: linear_relu
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_quantile_bucket:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: quantile_bucket
+  numeric_embedding_params:
+    embedding_init_std: 1.0e-05
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_log_squared_bucket:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: log_squared_bucket
+  numeric_embedding_params:
+    embedding_init_std: 0.0001
+    vocab_path: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/log_squared_bucket_vocab.json
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_autodis:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: autodis
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    temperature: 0.05
+    residual_weight: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_ple_a:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: A
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_ple_b:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_ple_relu:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: piecewise_linear_relu
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_periodic:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: periodic
+  numeric_embedding_params:
+    n_frequencies: 8
+    frequency_init_scale: 0.01
+    lite: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_plr:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: plr
+  numeric_embedding_params:
+    n_frequencies: 16
+    frequency_init_scale: 0.05
+    lite: false
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_narydis_lite:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: narydis_lite
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 16
+    multiplier: 100
+    signed: true
+    pooling: mean
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_bspline:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: bspline
+  numeric_embedding_params:
+    n_basis: 32
+    degree: 3
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_narydis_full:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: narydis_full
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1.0
+    min_temperature: 0.1
+    temperature_decay: 5.0e-05
+    attention_hidden_dims:
+    - 80
+    - 40
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.0
+    ssl_max_samples: 512
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_deer:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: deer
+  numeric_embedding_params:
+    n_bins: 16
+    min_width: 0.0
+    width_temperature: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_dae:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: dae
+  numeric_embedding_params:
+    n_quantiles: 32
+    hidden_dim: 32
+    temperature: 1.0
+    normalize_distances: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_daes_gate:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: daes_gate
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.2
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_PNN_daes_tran:
+  model: PNN
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  product_type: inner
+  numeric_embedding: daes_tran
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_field:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: field
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_linear:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: linear
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_linear_relu:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: linear_relu
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_quantile_bucket:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: quantile_bucket
+  numeric_embedding_params:
+    embedding_init_std: 1.0e-05
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_log_squared_bucket:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: log_squared_bucket
+  numeric_embedding_params:
+    embedding_init_std: 0.0001
+    vocab_path: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/log_squared_bucket_vocab.json
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_autodis:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: autodis
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    temperature: 0.05
+    residual_weight: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_ple_a:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: A
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_ple_b:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_ple_relu:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: piecewise_linear_relu
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_periodic:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: periodic
+  numeric_embedding_params:
+    n_frequencies: 8
+    frequency_init_scale: 0.01
+    lite: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_plr:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: plr
+  numeric_embedding_params:
+    n_frequencies: 16
+    frequency_init_scale: 0.05
+    lite: false
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_narydis_lite:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: narydis_lite
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 16
+    multiplier: 100
+    signed: true
+    pooling: mean
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_bspline:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: bspline
+  numeric_embedding_params:
+    n_basis: 32
+    degree: 3
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_narydis_full:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: narydis_full
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1.0
+    min_temperature: 0.1
+    temperature_decay: 5.0e-05
+    attention_hidden_dims:
+    - 80
+    - 40
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.0
+    ssl_max_samples: 512
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_deer:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: deer
+  numeric_embedding_params:
+    n_bins: 16
+    min_width: 0.0
+    width_temperature: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_dae:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: dae
+  numeric_embedding_params:
+    n_quantiles: 32
+    hidden_dim: 32
+    temperature: 1.0
+    normalize_distances: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_daes_gate:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: daes_gate
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.2
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCN_daes_tran:
+  model: DCN
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  numeric_embedding: daes_tran
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_field:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: field
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_linear:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: linear
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_linear_relu:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: linear_relu
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_quantile_bucket:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: quantile_bucket
+  numeric_embedding_params:
+    embedding_init_std: 1.0e-05
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_log_squared_bucket:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: log_squared_bucket
+  numeric_embedding_params:
+    embedding_init_std: 0.0001
+    vocab_path: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/log_squared_bucket_vocab.json
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_autodis:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: autodis
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    temperature: 0.05
+    residual_weight: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_ple_a:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: A
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_ple_b:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_ple_relu:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: piecewise_linear_relu
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_periodic:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: periodic
+  numeric_embedding_params:
+    n_frequencies: 8
+    frequency_init_scale: 0.01
+    lite: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_plr:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: plr
+  numeric_embedding_params:
+    n_frequencies: 16
+    frequency_init_scale: 0.05
+    lite: false
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_narydis_lite:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: narydis_lite
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 16
+    multiplier: 100
+    signed: true
+    pooling: mean
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_bspline:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: bspline
+  numeric_embedding_params:
+    n_basis: 32
+    degree: 3
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_narydis_full:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: narydis_full
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1.0
+    min_temperature: 0.1
+    temperature_decay: 5.0e-05
+    attention_hidden_dims:
+    - 80
+    - 40
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.0
+    ssl_max_samples: 512
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_deer:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: deer
+  numeric_embedding_params:
+    n_bins: 16
+    min_width: 0.0
+    width_temperature: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_dae:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: dae
+  numeric_embedding_params:
+    n_quantiles: 32
+    hidden_dim: 32
+    temperature: 1.0
+    normalize_distances: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_daes_gate:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: daes_gate
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.2
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_DCNv2_daes_tran:
+  model: DCNv2
+  model_structure: parallel
+  parallel_dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  num_cross_layers: 3
+  use_low_rank_mixture: false
+  numeric_embedding: daes_tran
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_field:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: field
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_linear:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: linear
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_linear_relu:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: linear_relu
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_quantile_bucket:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: quantile_bucket
+  numeric_embedding_params:
+    embedding_init_std: 1.0e-05
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_log_squared_bucket:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: log_squared_bucket
+  numeric_embedding_params:
+    embedding_init_std: 0.0001
+    vocab_path: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/log_squared_bucket_vocab.json
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_autodis:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: autodis
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    temperature: 0.05
+    residual_weight: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_ple_a:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: A
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_ple_b:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_ple_relu:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: piecewise_linear_relu
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_periodic:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: periodic
+  numeric_embedding_params:
+    n_frequencies: 8
+    frequency_init_scale: 0.01
+    lite: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_plr:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: plr
+  numeric_embedding_params:
+    n_frequencies: 16
+    frequency_init_scale: 0.05
+    lite: false
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_narydis_lite:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: narydis_lite
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 16
+    multiplier: 100
+    signed: true
+    pooling: mean
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_bspline:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: bspline
+  numeric_embedding_params:
+    n_basis: 32
+    degree: 3
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_narydis_full:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: narydis_full
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1.0
+    min_temperature: 0.1
+    temperature_decay: 5.0e-05
+    attention_hidden_dims:
+    - 80
+    - 40
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.0
+    ssl_max_samples: 512
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_deer:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: deer
+  numeric_embedding_params:
+    n_bins: 16
+    min_width: 0.0
+    width_temperature: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_dae:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: dae
+  numeric_embedding_params:
+    n_quantiles: 32
+    hidden_dim: 32
+    temperature: 1.0
+    normalize_distances: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_daes_gate:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: daes_gate
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.2
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_AutoInt_daes_tran:
+  model: AutoInt
+  dnn_hidden_units:
+  - 256
+  - 128
+  - 64
+  dnn_activations: relu
+  attention_layers: 2
+  num_heads: 2
+  attention_dim: 16
+  layer_norm: true
+  use_scale: true
+  use_wide: false
+  use_residual: true
+  numeric_embedding: daes_tran
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_field:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: field
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_linear:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: linear
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_linear_relu:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: linear_relu
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_quantile_bucket:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: quantile_bucket
+  lr_use_shared_numeric_embedding: true
+  numeric_embedding_params:
+    embedding_init_std: 1.0e-05
+Tuned_criteo_FiBiNET_log_squared_bucket:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: log_squared_bucket
+  numeric_embedding_params:
+    embedding_init_std: 0.0001
+    vocab_path: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/log_squared_bucket_vocab.json
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_autodis:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: autodis
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    temperature: 0.05
+    residual_weight: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_ple_a:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: A
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_ple_b:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: piecewise_linear
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_ple_relu:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: piecewise_linear_relu
+  numeric_embedding_params:
+    version: B
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_periodic:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: periodic
+  numeric_embedding_params:
+    n_frequencies: 8
+    frequency_init_scale: 0.01
+    lite: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_plr:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: plr
+  numeric_embedding_params:
+    n_frequencies: 16
+    frequency_init_scale: 0.05
+    lite: false
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_narydis_lite:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: narydis_lite
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 16
+    multiplier: 100
+    signed: true
+    pooling: mean
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_bspline:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: bspline
+  numeric_embedding_params:
+    n_basis: 32
+    degree: 3
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_narydis_full:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: narydis_full
+  numeric_embedding_params:
+    bases:
+    - 2
+    - 3
+    - 5
+    - 7
+    - 10
+    max_digits: 12
+    multiplier: 100
+    signed: true
+    temperature: 1.0
+    min_temperature: 0.1
+    temperature_decay: 5.0e-05
+    attention_hidden_dims:
+    - 80
+    - 40
+    ssl_hidden_dim: 64
+    ssl_temperature: 0.1
+    ssl_weight: 0.0
+    ssl_max_samples: 512
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_deer:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: deer
+  numeric_embedding_params:
+    n_bins: 16
+    min_width: 0.0
+    width_temperature: 1.0
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_dae:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: dae
+  numeric_embedding_params:
+    n_quantiles: 32
+    hidden_dim: 32
+    temperature: 1.0
+    normalize_distances: false
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_daes_gate:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: daes_gate
+  numeric_embedding_params:
+    n_meta_embeddings: 10
+    reservoir_size: 100000
+    beta: 0.2
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true
+Tuned_criteo_FiBiNET_daes_tran:
+  model: FiBiNET
+  hidden_units:
+  - 256
+  - 128
+  - 64
+  hidden_activations: relu
+  bilinear_type: field_interaction
+  reduction_ratio: 3
+  numeric_embedding: daes_tran
+  numeric_embedding_params:
+    n_meta_embeddings: 16
+    reservoir_size: 100000
+    beta: 0.5
+    n_context_fields: 3
+    quantile_refresh_interval: 100
+    embedding_init_std: 0.0001
+  lr_use_shared_numeric_embedding: true

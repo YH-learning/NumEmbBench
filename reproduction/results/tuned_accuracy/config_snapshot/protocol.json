@@ -1,0 +1,53 @@
+{
+  "name": "numemb_tuned_final_3data_9bb_3seed_20260919",
+  "frozen_config_source": "results/tuned_accuracy/config_snapshot/frozen_method_configs.json",
+  "test_metrics_used_for_selection": false,
+  "datasets": [
+    "Criteo_x4_NumEmbZScoreV2",
+    "AutoML_A_ZScoreV2",
+    "AutoML_E_ZScoreV2"
+  ],
+  "backbones": [
+    "DNN",
+    "DeepFM",
+    "WideDeep",
+    "NFM",
+    "PNN",
+    "DCN",
+    "DCNv2",
+    "AutoInt",
+    "FiBiNET"
+  ],
+  "methods": [
+    "field",
+    "linear",
+    "linear_relu",
+    "quantile_bucket",
+    "log_squared_bucket",
+    "autodis",
+    "ple_a",
+    "ple_b",
+    "ple_relu",
+    "periodic",
+    "plr",
+    "narydis_lite",
+    "bspline",
+    "narydis_full",
+    "deer",
+    "dae",
+    "daes_gate",
+    "daes_tran"
+  ],
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "epochs": 100,
+  "early_stop_patience": 2,
+  "monitor": "AUC",
+  "fixed_embedding_dim": 16,
+  "fixed_learning_rate": 0.001,
+  "fixed_batch_size": 4096,
+  "expected_tasks": 1458
+}

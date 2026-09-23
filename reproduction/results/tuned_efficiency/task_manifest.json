@@ -1,0 +1,2918 @@
+[
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "plr"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_a"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "field"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_tran"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "deer"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_a"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "periodic"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_b"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_b"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "bspline"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "autodis"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "dae"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_a"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_b"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "dae"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "bspline"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "dae"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "periodic"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "deer"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "field"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_gate"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_full"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "bspline"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "dae"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_a"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "plr"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_gate"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "periodic"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_gate"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "autodis"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_a"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "field"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_tran"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "autodis"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_full"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_gate"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_gate"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "autodis"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_full"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "deer"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "deer"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "dae"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "bspline"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "periodic"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "bspline"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "bspline"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "autodis"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_b"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_b"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "field"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_tran"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_a"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "field"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_full"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_b"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_gate"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "deer"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "dae"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "field"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "deer"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "deer"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "autodis"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "bspline"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "plr"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "dae"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "linear"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "deer"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_tran"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "plr"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_tran"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_a"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_full"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "plr"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "plr"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "periodic"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_gate"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "periodic"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "field"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_tran"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_b"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_tran"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "bspline"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_full"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "dae"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_a"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_a"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_b"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "periodic"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "linear_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_full"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_full"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "autodis"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "autodis"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_b"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_gate"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "deer"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "field"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "field"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_tran"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "autodis"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "dae"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_gate"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "periodic"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_tran"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "bspline"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "plr"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_full"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "plr"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear_relu"
+  },
+  {
+    "round": 0,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "plr"
+  },
+  {
+    "round": 0,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "periodic"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "deer"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_gate"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "plr"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "periodic"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_a"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_full"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_gate"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_full"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_a"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "plr"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_tran"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "field"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_a"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_a"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "plr"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_tran"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_tran"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "deer"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_b"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_tran"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "linear_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_tran"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "periodic"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "periodic"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "plr"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_gate"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_tran"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "autodis"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "deer"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_full"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "periodic"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_gate"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_b"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_full"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "periodic"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "plr"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_gate"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "field"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "field"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "periodic"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_b"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "periodic"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "plr"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "periodic"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "autodis"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "dae"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_a"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_gate"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "deer"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "field"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_a"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "deer"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "dae"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "field"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_gate"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_b"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "plr"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_a"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "deer"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "field"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "deer"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_full"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_full"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "bspline"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "autodis"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "dae"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "bspline"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "linear"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "bspline"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "dae"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "bspline"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "autodis"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "bspline"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_tran"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_gate"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "plr"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_b"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "bspline"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "dae"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_b"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_full"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "plr"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_tran"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "bspline"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_tran"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_a"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "field"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "deer"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_a"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "dae"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "bspline"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "autodis"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_gate"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "dae"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_full"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "autodis"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "autodis"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "dae"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "deer"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "dae"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_b"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "field"
+  },
+  {
+    "round": 1,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_b"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "bspline"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "autodis"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_full"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear_relu"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "autodis"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_b"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "periodic"
+  },
+  {
+    "round": 1,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "field"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_full"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "periodic"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "deer"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "dae"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_a"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "linear_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "autodis"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "periodic"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "plr"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_b"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_gate"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_a"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "bspline"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "field"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_b"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "dae"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_gate"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_a"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "plr"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_tran"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "field"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_gate"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "deer"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_tran"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "dae"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_full"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_tran"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "deer"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_gate"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_full"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_gate"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "dae"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_tran"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "dae"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_tran"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "deer"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_b"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "periodic"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "dae"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_a"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_gate"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "field"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "deer"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "deer"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_gate"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_gate"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_tran"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "field"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "plr"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "plr"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "bspline"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "autodis"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_full"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "autodis"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_full"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "bspline"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "bspline"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "plr"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_b"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "bspline"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "autodis"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "field"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "bspline"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "daes_gate"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_a"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_a"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "periodic"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "autodis"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "deer"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "linear"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_tran"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "daes_tran"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "dae"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "deer"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_full"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "linear"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_a"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "autodis"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "autodis"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "periodic"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_full"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_b"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "dae"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_a"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "bspline"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_a"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "bspline"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "log_squared_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_full"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "periodic"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "field"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "linear_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "plr"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "field"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "plr"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "field"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "plr"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "autodis"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_b"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_full"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_b"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "autodis"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DNN",
+    "method": "ple_b"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DNN",
+    "method": "quantile_bucket"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "plr"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "bspline"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DCNv2",
+    "method": "narydis_lite"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "periodic"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "linear"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DeepFM",
+    "method": "daes_tran"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "periodic"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "ple_b"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_E_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "deer"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "ple_relu"
+  },
+  {
+    "round": 2,
+    "dataset": "AutoML_A_ZScoreV2",
+    "backbone": "DCNv2",
+    "method": "periodic"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DNN",
+    "method": "dae"
+  },
+  {
+    "round": 2,
+    "dataset": "Criteo_x4_NumEmbZScoreV2",
+    "backbone": "DeepFM",
+    "method": "field"
+  }
+]

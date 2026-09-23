@@ -1,0 +1,7 @@
+AutoML_A_ZScoreV2:
+  data_root: __DATASET_ROOT__
+  data_format: parquet
+  streaming: false
+  train_data: __DATASET_ROOT__/AutoML_A_ZScoreV2/train.parquet
+  valid_data: __DATASET_ROOT__/AutoML_A_ZScoreV2/valid.parquet
+  test_data: __DATASET_ROOT__/AutoML_A_ZScoreV2/test.parquet

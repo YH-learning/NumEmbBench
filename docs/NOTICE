@@ -1,0 +1,7 @@
+NumEmb Benchmark for CTR Prediction
+Copyright 2026 NumEmb Benchmark contributors
+
+Original benchmark code in this repository is licensed under Apache-2.0.
+Bundled FuxiCTR and rtdl-num-embeddings retain their original copyright
+notices and Apache-2.0 licenses in docs/licenses/ and source headers.
+Reported names of research methods do not imply endorsement by their authors.

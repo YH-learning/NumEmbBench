@@ -1,0 +1,7 @@
+family,methods,mapping_principle,continuity,uses_data_statistics,uses_context
+Pointwise projection,Field; Linear; Linear-ReLU,direct learned transform of one scalar,continuous,no,no
+Discretization,Quantile; LogBucket; AutoDis,hard/soft assignment to bins or prototypes,hard or soft,optional,AutoDis only
+Fixed basis,Periodic; B-spline,predefined global functions evaluated at a scalar,continuous,no,no
+Piecewise basis,PLE-A; PLE-B; PLE-ReLU; PLR,local basis over data-dependent intervals,continuous,train statistics,no
+Adaptive coordinates,DEER; NaryDis-Lite; NaryDis,learned/local or symbolic scalar coordinates,method dependent,optional,no
+Distribution/context adaptive,DAE; DAES-Gate; DAES-Tran,distribution- or context-conditioned mapping,continuous,distribution,DAES

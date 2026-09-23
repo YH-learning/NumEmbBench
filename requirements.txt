@@ -1,0 +1,14 @@
+# Benchmark runtime. Install a CUDA-compatible PyTorch wheel separately first.
+# This repository includes the exact FuxiCTR 2.3.10 integration snapshot and
+# the rtdl-num-embeddings 0.0.12 source used by the experiments.
+numpy>=1.24,<2
+pandas>=2.0,<3
+torch>=2.2,<3
+pyarrow>=15,<25
+PyYAML>=6.0.1,<7
+scikit-learn>=1.4,<2
+packaging>=23
+keras_preprocessing
+h5py
+tqdm
+polars>=1.0,<2

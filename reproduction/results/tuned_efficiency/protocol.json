@@ -1,0 +1,40 @@
+{
+  "name": "numemb_tuned_efficiency_18method_3data_3bb_3round_20260920_r1",
+  "scope": "common eager FP32; one model resident; real train batches; disk I/O excluded",
+  "datasets": [
+    "AutoML_A_ZScoreV2",
+    "AutoML_E_ZScoreV2",
+    "Criteo_x4_NumEmbZScoreV2"
+  ],
+  "backbones": [
+    "DNN",
+    "DeepFM",
+    "DCNv2"
+  ],
+  "methods": [
+    "field",
+    "linear",
+    "linear_relu",
+    "quantile_bucket",
+    "log_squared_bucket",
+    "autodis",
+    "ple_a",
+    "ple_b",
+    "ple_relu",
+    "periodic",
+    "plr",
+    "narydis_lite",
+    "bspline",
+    "narydis_full",
+    "deer",
+    "dae",
+    "daes_gate",
+    "daes_tran"
+  ],
+  "rounds": 3,
+  "warmup": 20,
+  "train_steps": 100,
+  "inference_steps": 80,
+  "gpu": 0,
+  "accuracy_protocol": "Stage-2 validation-frozen tuned shared-zscore configuration"
+}

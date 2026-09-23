@@ -1,0 +1,54 @@
+{
+  "status": "pass",
+  "per_seed_runs": 1458,
+  "cells": 486,
+  "datasets": [
+    "AutoML-A",
+    "AutoML-E",
+    "Criteo"
+  ],
+  "backbones": [
+    "AutoInt",
+    "DCN",
+    "DCNv2",
+    "DNN",
+    "DeepFM",
+    "FiBiNET",
+    "NFM",
+    "PNN",
+    "WideDeep"
+  ],
+  "methods": [
+    "autodis",
+    "bspline",
+    "dae",
+    "daes_gate",
+    "daes_tran",
+    "deer",
+    "field",
+    "linear",
+    "linear_relu",
+    "log_squared_bucket",
+    "narydis_full",
+    "narydis_lite",
+    "periodic",
+    "ple_a",
+    "ple_b",
+    "ple_relu",
+    "plr",
+    "quantile_bucket"
+  ],
+  "deer_robustness_record": {
+    "method": "deer",
+    "cells": "27",
+    "average_rank": "3.185185185185185",
+    "median_rank": "2.0",
+    "worst_rank": "14.0",
+    "wins": "12",
+    "top3_count": "19",
+    "mean_delta_test_auc_vs_field": "0.0026833827160493615",
+    "mean_test_auc": "0.7856176913580247",
+    "mean_test_logloss": "0.24975790123456787",
+    "mean_elapsed_seconds": "465.6062592592592"
+  }
+}

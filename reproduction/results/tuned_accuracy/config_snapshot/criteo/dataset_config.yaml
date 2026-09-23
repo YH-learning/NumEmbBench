@@ -1,0 +1,7 @@
+Criteo_x4_NumEmbZScoreV2:
+  data_root: __DATASET_ROOT__
+  data_format: parquet
+  streaming: false
+  train_data: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/train.parquet
+  valid_data: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/valid.parquet
+  test_data: __DATASET_ROOT__/Criteo_x4_NumEmbZScoreV2/test.parquet

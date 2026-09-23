@@ -1,0 +1,2381 @@
+{
+  "dataset_id": "AutoML_E_ZScoreV2",
+  "slug": "automl_e",
+  "experiments": [
+    "Tuned_automl_e_DNN_field",
+    "Tuned_automl_e_DNN_linear",
+    "Tuned_automl_e_DNN_linear_relu",
+    "Tuned_automl_e_DNN_quantile_bucket",
+    "Tuned_automl_e_DNN_log_squared_bucket",
+    "Tuned_automl_e_DNN_autodis",
+    "Tuned_automl_e_DNN_ple_a",
+    "Tuned_automl_e_DNN_ple_b",
+    "Tuned_automl_e_DNN_ple_relu",
+    "Tuned_automl_e_DNN_periodic",
+    "Tuned_automl_e_DNN_plr",
+    "Tuned_automl_e_DNN_narydis_lite",
+    "Tuned_automl_e_DNN_bspline",
+    "Tuned_automl_e_DNN_narydis_full",
+    "Tuned_automl_e_DNN_deer",
+    "Tuned_automl_e_DNN_dae",
+    "Tuned_automl_e_DNN_daes_gate",
+    "Tuned_automl_e_DNN_daes_tran",
+    "Tuned_automl_e_DeepFM_field",
+    "Tuned_automl_e_DeepFM_linear",
+    "Tuned_automl_e_DeepFM_linear_relu",
+    "Tuned_automl_e_DeepFM_quantile_bucket",
+    "Tuned_automl_e_DeepFM_log_squared_bucket",
+    "Tuned_automl_e_DeepFM_autodis",
+    "Tuned_automl_e_DeepFM_ple_a",
+    "Tuned_automl_e_DeepFM_ple_b",
+    "Tuned_automl_e_DeepFM_ple_relu",
+    "Tuned_automl_e_DeepFM_periodic",
+    "Tuned_automl_e_DeepFM_plr",
+    "Tuned_automl_e_DeepFM_narydis_lite",
+    "Tuned_automl_e_DeepFM_bspline",
+    "Tuned_automl_e_DeepFM_narydis_full",
+    "Tuned_automl_e_DeepFM_deer",
+    "Tuned_automl_e_DeepFM_dae",
+    "Tuned_automl_e_DeepFM_daes_gate",
+    "Tuned_automl_e_DeepFM_daes_tran",
+    "Tuned_automl_e_WideDeep_field",
+    "Tuned_automl_e_WideDeep_linear",
+    "Tuned_automl_e_WideDeep_linear_relu",
+    "Tuned_automl_e_WideDeep_quantile_bucket",
+    "Tuned_automl_e_WideDeep_log_squared_bucket",
+    "Tuned_automl_e_WideDeep_autodis",
+    "Tuned_automl_e_WideDeep_ple_a",
+    "Tuned_automl_e_WideDeep_ple_b",
+    "Tuned_automl_e_WideDeep_ple_relu",
+    "Tuned_automl_e_WideDeep_periodic",
+    "Tuned_automl_e_WideDeep_plr",
+    "Tuned_automl_e_WideDeep_narydis_lite",
+    "Tuned_automl_e_WideDeep_bspline",
+    "Tuned_automl_e_WideDeep_narydis_full",
+    "Tuned_automl_e_WideDeep_deer",
+    "Tuned_automl_e_WideDeep_dae",
+    "Tuned_automl_e_WideDeep_daes_gate",
+    "Tuned_automl_e_WideDeep_daes_tran",
+    "Tuned_automl_e_NFM_field",
+    "Tuned_automl_e_NFM_linear",
+    "Tuned_automl_e_NFM_linear_relu",
+    "Tuned_automl_e_NFM_quantile_bucket",
+    "Tuned_automl_e_NFM_log_squared_bucket",
+    "Tuned_automl_e_NFM_autodis",
+    "Tuned_automl_e_NFM_ple_a",
+    "Tuned_automl_e_NFM_ple_b",
+    "Tuned_automl_e_NFM_ple_relu",
+    "Tuned_automl_e_NFM_periodic",
+    "Tuned_automl_e_NFM_plr",
+    "Tuned_automl_e_NFM_narydis_lite",
+    "Tuned_automl_e_NFM_bspline",
+    "Tuned_automl_e_NFM_narydis_full",
+    "Tuned_automl_e_NFM_deer",
+    "Tuned_automl_e_NFM_dae",
+    "Tuned_automl_e_NFM_daes_gate",
+    "Tuned_automl_e_NFM_daes_tran",
+    "Tuned_automl_e_PNN_field",
+    "Tuned_automl_e_PNN_linear",
+    "Tuned_automl_e_PNN_linear_relu",
+    "Tuned_automl_e_PNN_quantile_bucket",
+    "Tuned_automl_e_PNN_log_squared_bucket",
+    "Tuned_automl_e_PNN_autodis",
+    "Tuned_automl_e_PNN_ple_a",
+    "Tuned_automl_e_PNN_ple_b",
+    "Tuned_automl_e_PNN_ple_relu",
+    "Tuned_automl_e_PNN_periodic",
+    "Tuned_automl_e_PNN_plr",
+    "Tuned_automl_e_PNN_narydis_lite",
+    "Tuned_automl_e_PNN_bspline",
+    "Tuned_automl_e_PNN_narydis_full",
+    "Tuned_automl_e_PNN_deer",
+    "Tuned_automl_e_PNN_dae",
+    "Tuned_automl_e_PNN_daes_gate",
+    "Tuned_automl_e_PNN_daes_tran",
+    "Tuned_automl_e_DCN_field",
+    "Tuned_automl_e_DCN_linear",
+    "Tuned_automl_e_DCN_linear_relu",
+    "Tuned_automl_e_DCN_quantile_bucket",
+    "Tuned_automl_e_DCN_log_squared_bucket",
+    "Tuned_automl_e_DCN_autodis",
+    "Tuned_automl_e_DCN_ple_a",
+    "Tuned_automl_e_DCN_ple_b",
+    "Tuned_automl_e_DCN_ple_relu",
+    "Tuned_automl_e_DCN_periodic",
+    "Tuned_automl_e_DCN_plr",
+    "Tuned_automl_e_DCN_narydis_lite",
+    "Tuned_automl_e_DCN_bspline",
+    "Tuned_automl_e_DCN_narydis_full",
+    "Tuned_automl_e_DCN_deer",
+    "Tuned_automl_e_DCN_dae",
+    "Tuned_automl_e_DCN_daes_gate",
+    "Tuned_automl_e_DCN_daes_tran",
+    "Tuned_automl_e_DCNv2_field",
+    "Tuned_automl_e_DCNv2_linear",
+    "Tuned_automl_e_DCNv2_linear_relu",
+    "Tuned_automl_e_DCNv2_quantile_bucket",
+    "Tuned_automl_e_DCNv2_log_squared_bucket",
+    "Tuned_automl_e_DCNv2_autodis",
+    "Tuned_automl_e_DCNv2_ple_a",
+    "Tuned_automl_e_DCNv2_ple_b",
+    "Tuned_automl_e_DCNv2_ple_relu",
+    "Tuned_automl_e_DCNv2_periodic",
+    "Tuned_automl_e_DCNv2_plr",
+    "Tuned_automl_e_DCNv2_narydis_lite",
+    "Tuned_automl_e_DCNv2_bspline",
+    "Tuned_automl_e_DCNv2_narydis_full",
+    "Tuned_automl_e_DCNv2_deer",
+    "Tuned_automl_e_DCNv2_dae",
+    "Tuned_automl_e_DCNv2_daes_gate",
+    "Tuned_automl_e_DCNv2_daes_tran",
+    "Tuned_automl_e_AutoInt_field",
+    "Tuned_automl_e_AutoInt_linear",
+    "Tuned_automl_e_AutoInt_linear_relu",
+    "Tuned_automl_e_AutoInt_quantile_bucket",
+    "Tuned_automl_e_AutoInt_log_squared_bucket",
+    "Tuned_automl_e_AutoInt_autodis",
+    "Tuned_automl_e_AutoInt_ple_a",
+    "Tuned_automl_e_AutoInt_ple_b",
+    "Tuned_automl_e_AutoInt_ple_relu",
+    "Tuned_automl_e_AutoInt_periodic",
+    "Tuned_automl_e_AutoInt_plr",
+    "Tuned_automl_e_AutoInt_narydis_lite",
+    "Tuned_automl_e_AutoInt_bspline",
+    "Tuned_automl_e_AutoInt_narydis_full",
+    "Tuned_automl_e_AutoInt_deer",
+    "Tuned_automl_e_AutoInt_dae",
+    "Tuned_automl_e_AutoInt_daes_gate",
+    "Tuned_automl_e_AutoInt_daes_tran",
+    "Tuned_automl_e_FiBiNET_field",
+    "Tuned_automl_e_FiBiNET_linear",
+    "Tuned_automl_e_FiBiNET_linear_relu",
+    "Tuned_automl_e_FiBiNET_quantile_bucket",
+    "Tuned_automl_e_FiBiNET_log_squared_bucket",
+    "Tuned_automl_e_FiBiNET_autodis",
+    "Tuned_automl_e_FiBiNET_ple_a",
+    "Tuned_automl_e_FiBiNET_ple_b",
+    "Tuned_automl_e_FiBiNET_ple_relu",
+    "Tuned_automl_e_FiBiNET_periodic",
+    "Tuned_automl_e_FiBiNET_plr",
+    "Tuned_automl_e_FiBiNET_narydis_lite",
+    "Tuned_automl_e_FiBiNET_bspline",
+    "Tuned_automl_e_FiBiNET_narydis_full",
+    "Tuned_automl_e_FiBiNET_deer",
+    "Tuned_automl_e_FiBiNET_dae",
+    "Tuned_automl_e_FiBiNET_daes_gate",
+    "Tuned_automl_e_FiBiNET_daes_tran"
+  ],
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "expected_tasks": 486,
+  "provenance": {
+    "Tuned_automl_e_DNN_field": {
+      "source": "V2_automl_e_DNN_field",
+      "method": "field",
+      "backbone": "DNN",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7869070555555555
+    },
+    "Tuned_automl_e_DNN_linear": {
+      "source": "V2_automl_e_DNN_linear",
+      "method": "linear",
+      "backbone": "DNN",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7878691666666666
+    },
+    "Tuned_automl_e_DNN_linear_relu": {
+      "source": "V2_automl_e_DNN_linear_relu",
+      "method": "linear_relu",
+      "backbone": "DNN",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7875715
+    },
+    "Tuned_automl_e_DNN_quantile_bucket": {
+      "source": "V2_automl_e_DNN_quantile_bucket",
+      "method": "quantile_bucket",
+      "backbone": "DNN",
+      "stage2_candidate": 0,
+      "params": {
+        "embedding_init_std": 1e-05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7881252222222223
+    },
+    "Tuned_automl_e_DNN_log_squared_bucket": {
+      "source": "V2_automl_e_DNN_log_squared_bucket",
+      "method": "log_squared_bucket",
+      "backbone": "DNN",
+      "stage2_candidate": 1,
+      "params": {
+        "embedding_init_std": 0.0001
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7749827777777778
+    },
+    "Tuned_automl_e_DNN_autodis": {
+      "source": "V2_automl_e_DNN_autodis",
+      "method": "autodis",
+      "backbone": "DNN",
+      "stage2_candidate": 3,
+      "params": {
+        "n_meta_embeddings": 16,
+        "residual_weight": 1.0,
+        "temperature": 0.05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7888263333333333
+    },
+    "Tuned_automl_e_DNN_ple_a": {
+      "source": "V2_automl_e_DNN_ple_a",
+      "method": "ple_a",
+      "backbone": "DNN",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "A"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7886427222222222
+    },
+    "Tuned_automl_e_DNN_ple_b": {
+      "source": "V2_automl_e_DNN_ple_b",
+      "method": "ple_b",
+      "backbone": "DNN",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7893172777777777
+    },
+    "Tuned_automl_e_DNN_ple_relu": {
+      "source": "V2_automl_e_DNN_ple_relu",
+      "method": "ple_relu",
+      "backbone": "DNN",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7879477222222222
+    },
+    "Tuned_automl_e_DNN_periodic": {
+      "source": "V2_automl_e_DNN_periodic",
+      "method": "periodic",
+      "backbone": "DNN",
+      "stage2_candidate": 0,
+      "params": {
+        "frequency_init_scale": 0.01,
+        "lite": false,
+        "n_frequencies": 8
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7883703888888889
+    },
+    "Tuned_automl_e_DNN_plr": {
+      "source": "V2_automl_e_DNN_plr",
+      "method": "plr",
+      "backbone": "DNN",
+      "stage2_candidate": 3,
+      "params": {
+        "embedding_init_std": 0.0001,
+        "frequency_init_scale": 0.05,
+        "lite": false,
+        "n_frequencies": 16
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7892539444444444
+    },
+    "Tuned_automl_e_DNN_narydis_lite": {
+      "source": "V2_automl_e_DNN_narydis_lite",
+      "method": "narydis_lite",
+      "backbone": "DNN",
+      "stage2_candidate": 7,
+      "params": {
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 16,
+        "multiplier": 100,
+        "pooling": "mean",
+        "signed": true
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7839723333333334
+    },
+    "Tuned_automl_e_DNN_bspline": {
+      "source": "V2_automl_e_DNN_bspline",
+      "method": "bspline",
+      "backbone": "DNN",
+      "stage2_candidate": 5,
+      "params": {
+        "degree": 3,
+        "n_basis": 32
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7887283333333334
+    },
+    "Tuned_automl_e_DNN_narydis_full": {
+      "source": "V2_automl_e_DNN_narydis_full",
+      "method": "narydis_full",
+      "backbone": "DNN",
+      "stage2_candidate": 5,
+      "params": {
+        "attention_hidden_dims": [
+          80,
+          40
+        ],
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 12,
+        "min_temperature": 0.1,
+        "multiplier": 100,
+        "signed": true,
+        "ssl_hidden_dim": 64,
+        "ssl_max_samples": 512,
+        "ssl_temperature": 0.1,
+        "ssl_weight": 0.0,
+        "temperature": 1.0,
+        "temperature_decay": 5e-05
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7867688888888889
+    },
+    "Tuned_automl_e_DNN_deer": {
+      "source": "V2_automl_e_DNN_deer",
+      "method": "deer",
+      "backbone": "DNN",
+      "stage2_candidate": 6,
+      "params": {
+        "min_width": 0.0,
+        "n_bins": 16,
+        "width_temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7891087777777778
+    },
+    "Tuned_automl_e_DNN_dae": {
+      "source": "V2_automl_e_DNN_dae",
+      "method": "dae",
+      "backbone": "DNN",
+      "stage2_candidate": 2,
+      "params": {
+        "hidden_dim": 32,
+        "n_quantiles": 32,
+        "normalize_distances": false,
+        "temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7880690555555555
+    },
+    "Tuned_automl_e_DNN_daes_gate": {
+      "source": "V2_automl_e_DNN_daes_gate",
+      "method": "daes_gate",
+      "backbone": "DNN",
+      "stage2_candidate": 3,
+      "params": {
+        "beta": 0.2,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 10,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7889661111111111
+    },
+    "Tuned_automl_e_DNN_daes_tran": {
+      "source": "V2_automl_e_DNN_daes_tran",
+      "method": "daes_tran",
+      "backbone": "DNN",
+      "stage2_candidate": 2,
+      "params": {
+        "beta": 0.5,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 16,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7878491666666667
+    },
+    "Tuned_automl_e_DeepFM_field": {
+      "source": "V2_automl_e_DeepFM_field",
+      "method": "field",
+      "backbone": "DeepFM",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7869070555555555
+    },
+    "Tuned_automl_e_DeepFM_linear": {
+      "source": "V2_automl_e_DeepFM_linear",
+      "method": "linear",
+      "backbone": "DeepFM",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7878691666666666
+    },
+    "Tuned_automl_e_DeepFM_linear_relu": {
+      "source": "V2_automl_e_DeepFM_linear_relu",
+      "method": "linear_relu",
+      "backbone": "DeepFM",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7875715
+    },
+    "Tuned_automl_e_DeepFM_quantile_bucket": {
+      "source": "V2_automl_e_DeepFM_quantile_bucket",
+      "method": "quantile_bucket",
+      "backbone": "DeepFM",
+      "stage2_candidate": 0,
+      "params": {
+        "embedding_init_std": 1e-05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7881252222222223
+    },
+    "Tuned_automl_e_DeepFM_log_squared_bucket": {
+      "source": "V2_automl_e_DeepFM_log_squared_bucket",
+      "method": "log_squared_bucket",
+      "backbone": "DeepFM",
+      "stage2_candidate": 1,
+      "params": {
+        "embedding_init_std": 0.0001
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7749827777777778
+    },
+    "Tuned_automl_e_DeepFM_autodis": {
+      "source": "V2_automl_e_DeepFM_autodis",
+      "method": "autodis",
+      "backbone": "DeepFM",
+      "stage2_candidate": 3,
+      "params": {
+        "n_meta_embeddings": 16,
+        "residual_weight": 1.0,
+        "temperature": 0.05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7888263333333333
+    },
+    "Tuned_automl_e_DeepFM_ple_a": {
+      "source": "V2_automl_e_DeepFM_ple_a",
+      "method": "ple_a",
+      "backbone": "DeepFM",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "A"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7886427222222222
+    },
+    "Tuned_automl_e_DeepFM_ple_b": {
+      "source": "V2_automl_e_DeepFM_ple_b",
+      "method": "ple_b",
+      "backbone": "DeepFM",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7893172777777777
+    },
+    "Tuned_automl_e_DeepFM_ple_relu": {
+      "source": "V2_automl_e_DeepFM_ple_relu",
+      "method": "ple_relu",
+      "backbone": "DeepFM",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7879477222222222
+    },
+    "Tuned_automl_e_DeepFM_periodic": {
+      "source": "V2_automl_e_DeepFM_periodic",
+      "method": "periodic",
+      "backbone": "DeepFM",
+      "stage2_candidate": 0,
+      "params": {
+        "frequency_init_scale": 0.01,
+        "lite": false,
+        "n_frequencies": 8
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7883703888888889
+    },
+    "Tuned_automl_e_DeepFM_plr": {
+      "source": "V2_automl_e_DeepFM_plr",
+      "method": "plr",
+      "backbone": "DeepFM",
+      "stage2_candidate": 3,
+      "params": {
+        "embedding_init_std": 0.0001,
+        "frequency_init_scale": 0.05,
+        "lite": false,
+        "n_frequencies": 16
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7892539444444444
+    },
+    "Tuned_automl_e_DeepFM_narydis_lite": {
+      "source": "V2_automl_e_DeepFM_narydis_lite",
+      "method": "narydis_lite",
+      "backbone": "DeepFM",
+      "stage2_candidate": 7,
+      "params": {
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 16,
+        "multiplier": 100,
+        "pooling": "mean",
+        "signed": true
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7839723333333334
+    },
+    "Tuned_automl_e_DeepFM_bspline": {
+      "source": "V2_automl_e_DeepFM_bspline",
+      "method": "bspline",
+      "backbone": "DeepFM",
+      "stage2_candidate": 5,
+      "params": {
+        "degree": 3,
+        "n_basis": 32
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7887283333333334
+    },
+    "Tuned_automl_e_DeepFM_narydis_full": {
+      "source": "V2_automl_e_DeepFM_narydis_full",
+      "method": "narydis_full",
+      "backbone": "DeepFM",
+      "stage2_candidate": 5,
+      "params": {
+        "attention_hidden_dims": [
+          80,
+          40
+        ],
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 12,
+        "min_temperature": 0.1,
+        "multiplier": 100,
+        "signed": true,
+        "ssl_hidden_dim": 64,
+        "ssl_max_samples": 512,
+        "ssl_temperature": 0.1,
+        "ssl_weight": 0.0,
+        "temperature": 1.0,
+        "temperature_decay": 5e-05
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7867688888888889
+    },
+    "Tuned_automl_e_DeepFM_deer": {
+      "source": "V2_automl_e_DeepFM_deer",
+      "method": "deer",
+      "backbone": "DeepFM",
+      "stage2_candidate": 6,
+      "params": {
+        "min_width": 0.0,
+        "n_bins": 16,
+        "width_temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7891087777777778
+    },
+    "Tuned_automl_e_DeepFM_dae": {
+      "source": "V2_automl_e_DeepFM_dae",
+      "method": "dae",
+      "backbone": "DeepFM",
+      "stage2_candidate": 2,
+      "params": {
+        "hidden_dim": 32,
+        "n_quantiles": 32,
+        "normalize_distances": false,
+        "temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7880690555555555
+    },
+    "Tuned_automl_e_DeepFM_daes_gate": {
+      "source": "V2_automl_e_DeepFM_daes_gate",
+      "method": "daes_gate",
+      "backbone": "DeepFM",
+      "stage2_candidate": 3,
+      "params": {
+        "beta": 0.2,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 10,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7889661111111111
+    },
+    "Tuned_automl_e_DeepFM_daes_tran": {
+      "source": "V2_automl_e_DeepFM_daes_tran",
+      "method": "daes_tran",
+      "backbone": "DeepFM",
+      "stage2_candidate": 2,
+      "params": {
+        "beta": 0.5,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 16,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7878491666666667
+    },
+    "Tuned_automl_e_WideDeep_field": {
+      "source": "V2_automl_e_WideDeep_field",
+      "method": "field",
+      "backbone": "WideDeep",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7869070555555555
+    },
+    "Tuned_automl_e_WideDeep_linear": {
+      "source": "V2_automl_e_WideDeep_linear",
+      "method": "linear",
+      "backbone": "WideDeep",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7878691666666666
+    },
+    "Tuned_automl_e_WideDeep_linear_relu": {
+      "source": "V2_automl_e_WideDeep_linear_relu",
+      "method": "linear_relu",
+      "backbone": "WideDeep",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7875715
+    },
+    "Tuned_automl_e_WideDeep_quantile_bucket": {
+      "source": "V2_automl_e_WideDeep_quantile_bucket",
+      "method": "quantile_bucket",
+      "backbone": "WideDeep",
+      "stage2_candidate": 0,
+      "params": {
+        "embedding_init_std": 1e-05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7881252222222223
+    },
+    "Tuned_automl_e_WideDeep_log_squared_bucket": {
+      "source": "V2_automl_e_WideDeep_log_squared_bucket",
+      "method": "log_squared_bucket",
+      "backbone": "WideDeep",
+      "stage2_candidate": 1,
+      "params": {
+        "embedding_init_std": 0.0001
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7749827777777778
+    },
+    "Tuned_automl_e_WideDeep_autodis": {
+      "source": "V2_automl_e_WideDeep_autodis",
+      "method": "autodis",
+      "backbone": "WideDeep",
+      "stage2_candidate": 3,
+      "params": {
+        "n_meta_embeddings": 16,
+        "residual_weight": 1.0,
+        "temperature": 0.05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7888263333333333
+    },
+    "Tuned_automl_e_WideDeep_ple_a": {
+      "source": "V2_automl_e_WideDeep_ple_a",
+      "method": "ple_a",
+      "backbone": "WideDeep",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "A"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7886427222222222
+    },
+    "Tuned_automl_e_WideDeep_ple_b": {
+      "source": "V2_automl_e_WideDeep_ple_b",
+      "method": "ple_b",
+      "backbone": "WideDeep",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7893172777777777
+    },
+    "Tuned_automl_e_WideDeep_ple_relu": {
+      "source": "V2_automl_e_WideDeep_ple_relu",
+      "method": "ple_relu",
+      "backbone": "WideDeep",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7879477222222222
+    },
+    "Tuned_automl_e_WideDeep_periodic": {
+      "source": "V2_automl_e_WideDeep_periodic",
+      "method": "periodic",
+      "backbone": "WideDeep",
+      "stage2_candidate": 0,
+      "params": {
+        "frequency_init_scale": 0.01,
+        "lite": false,
+        "n_frequencies": 8
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7883703888888889
+    },
+    "Tuned_automl_e_WideDeep_plr": {
+      "source": "V2_automl_e_WideDeep_plr",
+      "method": "plr",
+      "backbone": "WideDeep",
+      "stage2_candidate": 3,
+      "params": {
+        "embedding_init_std": 0.0001,
+        "frequency_init_scale": 0.05,
+        "lite": false,
+        "n_frequencies": 16
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7892539444444444
+    },
+    "Tuned_automl_e_WideDeep_narydis_lite": {
+      "source": "V2_automl_e_WideDeep_narydis_lite",
+      "method": "narydis_lite",
+      "backbone": "WideDeep",
+      "stage2_candidate": 7,
+      "params": {
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 16,
+        "multiplier": 100,
+        "pooling": "mean",
+        "signed": true
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7839723333333334
+    },
+    "Tuned_automl_e_WideDeep_bspline": {
+      "source": "V2_automl_e_WideDeep_bspline",
+      "method": "bspline",
+      "backbone": "WideDeep",
+      "stage2_candidate": 5,
+      "params": {
+        "degree": 3,
+        "n_basis": 32
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7887283333333334
+    },
+    "Tuned_automl_e_WideDeep_narydis_full": {
+      "source": "V2_automl_e_WideDeep_narydis_full",
+      "method": "narydis_full",
+      "backbone": "WideDeep",
+      "stage2_candidate": 5,
+      "params": {
+        "attention_hidden_dims": [
+          80,
+          40
+        ],
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 12,
+        "min_temperature": 0.1,
+        "multiplier": 100,
+        "signed": true,
+        "ssl_hidden_dim": 64,
+        "ssl_max_samples": 512,
+        "ssl_temperature": 0.1,
+        "ssl_weight": 0.0,
+        "temperature": 1.0,
+        "temperature_decay": 5e-05
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7867688888888889
+    },
+    "Tuned_automl_e_WideDeep_deer": {
+      "source": "V2_automl_e_WideDeep_deer",
+      "method": "deer",
+      "backbone": "WideDeep",
+      "stage2_candidate": 6,
+      "params": {
+        "min_width": 0.0,
+        "n_bins": 16,
+        "width_temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7891087777777778
+    },
+    "Tuned_automl_e_WideDeep_dae": {
+      "source": "V2_automl_e_WideDeep_dae",
+      "method": "dae",
+      "backbone": "WideDeep",
+      "stage2_candidate": 2,
+      "params": {
+        "hidden_dim": 32,
+        "n_quantiles": 32,
+        "normalize_distances": false,
+        "temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7880690555555555
+    },
+    "Tuned_automl_e_WideDeep_daes_gate": {
+      "source": "V2_automl_e_WideDeep_daes_gate",
+      "method": "daes_gate",
+      "backbone": "WideDeep",
+      "stage2_candidate": 3,
+      "params": {
+        "beta": 0.2,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 10,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7889661111111111
+    },
+    "Tuned_automl_e_WideDeep_daes_tran": {
+      "source": "V2_automl_e_WideDeep_daes_tran",
+      "method": "daes_tran",
+      "backbone": "WideDeep",
+      "stage2_candidate": 2,
+      "params": {
+        "beta": 0.5,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 16,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7878491666666667
+    },
+    "Tuned_automl_e_NFM_field": {
+      "source": "V2_automl_e_NFM_field",
+      "method": "field",
+      "backbone": "NFM",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7869070555555555
+    },
+    "Tuned_automl_e_NFM_linear": {
+      "source": "V2_automl_e_NFM_linear",
+      "method": "linear",
+      "backbone": "NFM",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7878691666666666
+    },
+    "Tuned_automl_e_NFM_linear_relu": {
+      "source": "V2_automl_e_NFM_linear_relu",
+      "method": "linear_relu",
+      "backbone": "NFM",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7875715
+    },
+    "Tuned_automl_e_NFM_quantile_bucket": {
+      "source": "V2_automl_e_NFM_quantile_bucket",
+      "method": "quantile_bucket",
+      "backbone": "NFM",
+      "stage2_candidate": 0,
+      "params": {
+        "embedding_init_std": 1e-05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7881252222222223
+    },
+    "Tuned_automl_e_NFM_log_squared_bucket": {
+      "source": "V2_automl_e_NFM_log_squared_bucket",
+      "method": "log_squared_bucket",
+      "backbone": "NFM",
+      "stage2_candidate": 1,
+      "params": {
+        "embedding_init_std": 0.0001
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7749827777777778
+    },
+    "Tuned_automl_e_NFM_autodis": {
+      "source": "V2_automl_e_NFM_autodis",
+      "method": "autodis",
+      "backbone": "NFM",
+      "stage2_candidate": 3,
+      "params": {
+        "n_meta_embeddings": 16,
+        "residual_weight": 1.0,
+        "temperature": 0.05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7888263333333333
+    },
+    "Tuned_automl_e_NFM_ple_a": {
+      "source": "V2_automl_e_NFM_ple_a",
+      "method": "ple_a",
+      "backbone": "NFM",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "A"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7886427222222222
+    },
+    "Tuned_automl_e_NFM_ple_b": {
+      "source": "V2_automl_e_NFM_ple_b",
+      "method": "ple_b",
+      "backbone": "NFM",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7893172777777777
+    },
+    "Tuned_automl_e_NFM_ple_relu": {
+      "source": "V2_automl_e_NFM_ple_relu",
+      "method": "ple_relu",
+      "backbone": "NFM",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7879477222222222
+    },
+    "Tuned_automl_e_NFM_periodic": {
+      "source": "V2_automl_e_NFM_periodic",
+      "method": "periodic",
+      "backbone": "NFM",
+      "stage2_candidate": 0,
+      "params": {
+        "frequency_init_scale": 0.01,
+        "lite": false,
+        "n_frequencies": 8
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7883703888888889
+    },
+    "Tuned_automl_e_NFM_plr": {
+      "source": "V2_automl_e_NFM_plr",
+      "method": "plr",
+      "backbone": "NFM",
+      "stage2_candidate": 3,
+      "params": {
+        "embedding_init_std": 0.0001,
+        "frequency_init_scale": 0.05,
+        "lite": false,
+        "n_frequencies": 16
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7892539444444444
+    },
+    "Tuned_automl_e_NFM_narydis_lite": {
+      "source": "V2_automl_e_NFM_narydis_lite",
+      "method": "narydis_lite",
+      "backbone": "NFM",
+      "stage2_candidate": 7,
+      "params": {
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 16,
+        "multiplier": 100,
+        "pooling": "mean",
+        "signed": true
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7839723333333334
+    },
+    "Tuned_automl_e_NFM_bspline": {
+      "source": "V2_automl_e_NFM_bspline",
+      "method": "bspline",
+      "backbone": "NFM",
+      "stage2_candidate": 5,
+      "params": {
+        "degree": 3,
+        "n_basis": 32
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7887283333333334
+    },
+    "Tuned_automl_e_NFM_narydis_full": {
+      "source": "V2_automl_e_NFM_narydis_full",
+      "method": "narydis_full",
+      "backbone": "NFM",
+      "stage2_candidate": 5,
+      "params": {
+        "attention_hidden_dims": [
+          80,
+          40
+        ],
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 12,
+        "min_temperature": 0.1,
+        "multiplier": 100,
+        "signed": true,
+        "ssl_hidden_dim": 64,
+        "ssl_max_samples": 512,
+        "ssl_temperature": 0.1,
+        "ssl_weight": 0.0,
+        "temperature": 1.0,
+        "temperature_decay": 5e-05
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7867688888888889
+    },
+    "Tuned_automl_e_NFM_deer": {
+      "source": "V2_automl_e_NFM_deer",
+      "method": "deer",
+      "backbone": "NFM",
+      "stage2_candidate": 6,
+      "params": {
+        "min_width": 0.0,
+        "n_bins": 16,
+        "width_temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7891087777777778
+    },
+    "Tuned_automl_e_NFM_dae": {
+      "source": "V2_automl_e_NFM_dae",
+      "method": "dae",
+      "backbone": "NFM",
+      "stage2_candidate": 2,
+      "params": {
+        "hidden_dim": 32,
+        "n_quantiles": 32,
+        "normalize_distances": false,
+        "temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7880690555555555
+    },
+    "Tuned_automl_e_NFM_daes_gate": {
+      "source": "V2_automl_e_NFM_daes_gate",
+      "method": "daes_gate",
+      "backbone": "NFM",
+      "stage2_candidate": 3,
+      "params": {
+        "beta": 0.2,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 10,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7889661111111111
+    },
+    "Tuned_automl_e_NFM_daes_tran": {
+      "source": "V2_automl_e_NFM_daes_tran",
+      "method": "daes_tran",
+      "backbone": "NFM",
+      "stage2_candidate": 2,
+      "params": {
+        "beta": 0.5,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 16,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7878491666666667
+    },
+    "Tuned_automl_e_PNN_field": {
+      "source": "V2_automl_e_PNN_field",
+      "method": "field",
+      "backbone": "PNN",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7869070555555555
+    },
+    "Tuned_automl_e_PNN_linear": {
+      "source": "V2_automl_e_PNN_linear",
+      "method": "linear",
+      "backbone": "PNN",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7878691666666666
+    },
+    "Tuned_automl_e_PNN_linear_relu": {
+      "source": "V2_automl_e_PNN_linear_relu",
+      "method": "linear_relu",
+      "backbone": "PNN",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7875715
+    },
+    "Tuned_automl_e_PNN_quantile_bucket": {
+      "source": "V2_automl_e_PNN_quantile_bucket",
+      "method": "quantile_bucket",
+      "backbone": "PNN",
+      "stage2_candidate": 0,
+      "params": {
+        "embedding_init_std": 1e-05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7881252222222223
+    },
+    "Tuned_automl_e_PNN_log_squared_bucket": {
+      "source": "V2_automl_e_PNN_log_squared_bucket",
+      "method": "log_squared_bucket",
+      "backbone": "PNN",
+      "stage2_candidate": 1,
+      "params": {
+        "embedding_init_std": 0.0001
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7749827777777778
+    },
+    "Tuned_automl_e_PNN_autodis": {
+      "source": "V2_automl_e_PNN_autodis",
+      "method": "autodis",
+      "backbone": "PNN",
+      "stage2_candidate": 3,
+      "params": {
+        "n_meta_embeddings": 16,
+        "residual_weight": 1.0,
+        "temperature": 0.05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7888263333333333
+    },
+    "Tuned_automl_e_PNN_ple_a": {
+      "source": "V2_automl_e_PNN_ple_a",
+      "method": "ple_a",
+      "backbone": "PNN",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "A"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7886427222222222
+    },
+    "Tuned_automl_e_PNN_ple_b": {
+      "source": "V2_automl_e_PNN_ple_b",
+      "method": "ple_b",
+      "backbone": "PNN",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7893172777777777
+    },
+    "Tuned_automl_e_PNN_ple_relu": {
+      "source": "V2_automl_e_PNN_ple_relu",
+      "method": "ple_relu",
+      "backbone": "PNN",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7879477222222222
+    },
+    "Tuned_automl_e_PNN_periodic": {
+      "source": "V2_automl_e_PNN_periodic",
+      "method": "periodic",
+      "backbone": "PNN",
+      "stage2_candidate": 0,
+      "params": {
+        "frequency_init_scale": 0.01,
+        "lite": false,
+        "n_frequencies": 8
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7883703888888889
+    },
+    "Tuned_automl_e_PNN_plr": {
+      "source": "V2_automl_e_PNN_plr",
+      "method": "plr",
+      "backbone": "PNN",
+      "stage2_candidate": 3,
+      "params": {
+        "embedding_init_std": 0.0001,
+        "frequency_init_scale": 0.05,
+        "lite": false,
+        "n_frequencies": 16
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7892539444444444
+    },
+    "Tuned_automl_e_PNN_narydis_lite": {
+      "source": "V2_automl_e_PNN_narydis_lite",
+      "method": "narydis_lite",
+      "backbone": "PNN",
+      "stage2_candidate": 7,
+      "params": {
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 16,
+        "multiplier": 100,
+        "pooling": "mean",
+        "signed": true
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7839723333333334
+    },
+    "Tuned_automl_e_PNN_bspline": {
+      "source": "V2_automl_e_PNN_bspline",
+      "method": "bspline",
+      "backbone": "PNN",
+      "stage2_candidate": 5,
+      "params": {
+        "degree": 3,
+        "n_basis": 32
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7887283333333334
+    },
+    "Tuned_automl_e_PNN_narydis_full": {
+      "source": "V2_automl_e_PNN_narydis_full",
+      "method": "narydis_full",
+      "backbone": "PNN",
+      "stage2_candidate": 5,
+      "params": {
+        "attention_hidden_dims": [
+          80,
+          40
+        ],
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 12,
+        "min_temperature": 0.1,
+        "multiplier": 100,
+        "signed": true,
+        "ssl_hidden_dim": 64,
+        "ssl_max_samples": 512,
+        "ssl_temperature": 0.1,
+        "ssl_weight": 0.0,
+        "temperature": 1.0,
+        "temperature_decay": 5e-05
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7867688888888889
+    },
+    "Tuned_automl_e_PNN_deer": {
+      "source": "V2_automl_e_PNN_deer",
+      "method": "deer",
+      "backbone": "PNN",
+      "stage2_candidate": 6,
+      "params": {
+        "min_width": 0.0,
+        "n_bins": 16,
+        "width_temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7891087777777778
+    },
+    "Tuned_automl_e_PNN_dae": {
+      "source": "V2_automl_e_PNN_dae",
+      "method": "dae",
+      "backbone": "PNN",
+      "stage2_candidate": 2,
+      "params": {
+        "hidden_dim": 32,
+        "n_quantiles": 32,
+        "normalize_distances": false,
+        "temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7880690555555555
+    },
+    "Tuned_automl_e_PNN_daes_gate": {
+      "source": "V2_automl_e_PNN_daes_gate",
+      "method": "daes_gate",
+      "backbone": "PNN",
+      "stage2_candidate": 3,
+      "params": {
+        "beta": 0.2,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 10,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7889661111111111
+    },
+    "Tuned_automl_e_PNN_daes_tran": {
+      "source": "V2_automl_e_PNN_daes_tran",
+      "method": "daes_tran",
+      "backbone": "PNN",
+      "stage2_candidate": 2,
+      "params": {
+        "beta": 0.5,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 16,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7878491666666667
+    },
+    "Tuned_automl_e_DCN_field": {
+      "source": "V2_automl_e_DCN_field",
+      "method": "field",
+      "backbone": "DCN",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7869070555555555
+    },
+    "Tuned_automl_e_DCN_linear": {
+      "source": "V2_automl_e_DCN_linear",
+      "method": "linear",
+      "backbone": "DCN",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7878691666666666
+    },
+    "Tuned_automl_e_DCN_linear_relu": {
+      "source": "V2_automl_e_DCN_linear_relu",
+      "method": "linear_relu",
+      "backbone": "DCN",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7875715
+    },
+    "Tuned_automl_e_DCN_quantile_bucket": {
+      "source": "V2_automl_e_DCN_quantile_bucket",
+      "method": "quantile_bucket",
+      "backbone": "DCN",
+      "stage2_candidate": 0,
+      "params": {
+        "embedding_init_std": 1e-05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7881252222222223
+    },
+    "Tuned_automl_e_DCN_log_squared_bucket": {
+      "source": "V2_automl_e_DCN_log_squared_bucket",
+      "method": "log_squared_bucket",
+      "backbone": "DCN",
+      "stage2_candidate": 1,
+      "params": {
+        "embedding_init_std": 0.0001
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7749827777777778
+    },
+    "Tuned_automl_e_DCN_autodis": {
+      "source": "V2_automl_e_DCN_autodis",
+      "method": "autodis",
+      "backbone": "DCN",
+      "stage2_candidate": 3,
+      "params": {
+        "n_meta_embeddings": 16,
+        "residual_weight": 1.0,
+        "temperature": 0.05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7888263333333333
+    },
+    "Tuned_automl_e_DCN_ple_a": {
+      "source": "V2_automl_e_DCN_ple_a",
+      "method": "ple_a",
+      "backbone": "DCN",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "A"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7886427222222222
+    },
+    "Tuned_automl_e_DCN_ple_b": {
+      "source": "V2_automl_e_DCN_ple_b",
+      "method": "ple_b",
+      "backbone": "DCN",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7893172777777777
+    },
+    "Tuned_automl_e_DCN_ple_relu": {
+      "source": "V2_automl_e_DCN_ple_relu",
+      "method": "ple_relu",
+      "backbone": "DCN",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7879477222222222
+    },
+    "Tuned_automl_e_DCN_periodic": {
+      "source": "V2_automl_e_DCN_periodic",
+      "method": "periodic",
+      "backbone": "DCN",
+      "stage2_candidate": 0,
+      "params": {
+        "frequency_init_scale": 0.01,
+        "lite": false,
+        "n_frequencies": 8
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7883703888888889
+    },
+    "Tuned_automl_e_DCN_plr": {
+      "source": "V2_automl_e_DCN_plr",
+      "method": "plr",
+      "backbone": "DCN",
+      "stage2_candidate": 3,
+      "params": {
+        "embedding_init_std": 0.0001,
+        "frequency_init_scale": 0.05,
+        "lite": false,
+        "n_frequencies": 16
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7892539444444444
+    },
+    "Tuned_automl_e_DCN_narydis_lite": {
+      "source": "V2_automl_e_DCN_narydis_lite",
+      "method": "narydis_lite",
+      "backbone": "DCN",
+      "stage2_candidate": 7,
+      "params": {
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 16,
+        "multiplier": 100,
+        "pooling": "mean",
+        "signed": true
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7839723333333334
+    },
+    "Tuned_automl_e_DCN_bspline": {
+      "source": "V2_automl_e_DCN_bspline",
+      "method": "bspline",
+      "backbone": "DCN",
+      "stage2_candidate": 5,
+      "params": {
+        "degree": 3,
+        "n_basis": 32
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7887283333333334
+    },
+    "Tuned_automl_e_DCN_narydis_full": {
+      "source": "V2_automl_e_DCN_narydis_full",
+      "method": "narydis_full",
+      "backbone": "DCN",
+      "stage2_candidate": 5,
+      "params": {
+        "attention_hidden_dims": [
+          80,
+          40
+        ],
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 12,
+        "min_temperature": 0.1,
+        "multiplier": 100,
+        "signed": true,
+        "ssl_hidden_dim": 64,
+        "ssl_max_samples": 512,
+        "ssl_temperature": 0.1,
+        "ssl_weight": 0.0,
+        "temperature": 1.0,
+        "temperature_decay": 5e-05
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7867688888888889
+    },
+    "Tuned_automl_e_DCN_deer": {
+      "source": "V2_automl_e_DCN_deer",
+      "method": "deer",
+      "backbone": "DCN",
+      "stage2_candidate": 6,
+      "params": {
+        "min_width": 0.0,
+        "n_bins": 16,
+        "width_temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7891087777777778
+    },
+    "Tuned_automl_e_DCN_dae": {
+      "source": "V2_automl_e_DCN_dae",
+      "method": "dae",
+      "backbone": "DCN",
+      "stage2_candidate": 2,
+      "params": {
+        "hidden_dim": 32,
+        "n_quantiles": 32,
+        "normalize_distances": false,
+        "temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7880690555555555
+    },
+    "Tuned_automl_e_DCN_daes_gate": {
+      "source": "V2_automl_e_DCN_daes_gate",
+      "method": "daes_gate",
+      "backbone": "DCN",
+      "stage2_candidate": 3,
+      "params": {
+        "beta": 0.2,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 10,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7889661111111111
+    },
+    "Tuned_automl_e_DCN_daes_tran": {
+      "source": "V2_automl_e_DCN_daes_tran",
+      "method": "daes_tran",
+      "backbone": "DCN",
+      "stage2_candidate": 2,
+      "params": {
+        "beta": 0.5,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 16,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7878491666666667
+    },
+    "Tuned_automl_e_DCNv2_field": {
+      "source": "V2_automl_e_DCNv2_field",
+      "method": "field",
+      "backbone": "DCNv2",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7869070555555555
+    },
+    "Tuned_automl_e_DCNv2_linear": {
+      "source": "V2_automl_e_DCNv2_linear",
+      "method": "linear",
+      "backbone": "DCNv2",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7878691666666666
+    },
+    "Tuned_automl_e_DCNv2_linear_relu": {
+      "source": "V2_automl_e_DCNv2_linear_relu",
+      "method": "linear_relu",
+      "backbone": "DCNv2",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7875715
+    },
+    "Tuned_automl_e_DCNv2_quantile_bucket": {
+      "source": "V2_automl_e_DCNv2_quantile_bucket",
+      "method": "quantile_bucket",
+      "backbone": "DCNv2",
+      "stage2_candidate": 0,
+      "params": {
+        "embedding_init_std": 1e-05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7881252222222223
+    },
+    "Tuned_automl_e_DCNv2_log_squared_bucket": {
+      "source": "V2_automl_e_DCNv2_log_squared_bucket",
+      "method": "log_squared_bucket",
+      "backbone": "DCNv2",
+      "stage2_candidate": 1,
+      "params": {
+        "embedding_init_std": 0.0001
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7749827777777778
+    },
+    "Tuned_automl_e_DCNv2_autodis": {
+      "source": "V2_automl_e_DCNv2_autodis",
+      "method": "autodis",
+      "backbone": "DCNv2",
+      "stage2_candidate": 3,
+      "params": {
+        "n_meta_embeddings": 16,
+        "residual_weight": 1.0,
+        "temperature": 0.05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7888263333333333
+    },
+    "Tuned_automl_e_DCNv2_ple_a": {
+      "source": "V2_automl_e_DCNv2_ple_a",
+      "method": "ple_a",
+      "backbone": "DCNv2",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "A"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7886427222222222
+    },
+    "Tuned_automl_e_DCNv2_ple_b": {
+      "source": "V2_automl_e_DCNv2_ple_b",
+      "method": "ple_b",
+      "backbone": "DCNv2",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7893172777777777
+    },
+    "Tuned_automl_e_DCNv2_ple_relu": {
+      "source": "V2_automl_e_DCNv2_ple_relu",
+      "method": "ple_relu",
+      "backbone": "DCNv2",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7879477222222222
+    },
+    "Tuned_automl_e_DCNv2_periodic": {
+      "source": "V2_automl_e_DCNv2_periodic",
+      "method": "periodic",
+      "backbone": "DCNv2",
+      "stage2_candidate": 0,
+      "params": {
+        "frequency_init_scale": 0.01,
+        "lite": false,
+        "n_frequencies": 8
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7883703888888889
+    },
+    "Tuned_automl_e_DCNv2_plr": {
+      "source": "V2_automl_e_DCNv2_plr",
+      "method": "plr",
+      "backbone": "DCNv2",
+      "stage2_candidate": 3,
+      "params": {
+        "embedding_init_std": 0.0001,
+        "frequency_init_scale": 0.05,
+        "lite": false,
+        "n_frequencies": 16
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7892539444444444
+    },
+    "Tuned_automl_e_DCNv2_narydis_lite": {
+      "source": "V2_automl_e_DCNv2_narydis_lite",
+      "method": "narydis_lite",
+      "backbone": "DCNv2",
+      "stage2_candidate": 7,
+      "params": {
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 16,
+        "multiplier": 100,
+        "pooling": "mean",
+        "signed": true
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7839723333333334
+    },
+    "Tuned_automl_e_DCNv2_bspline": {
+      "source": "V2_automl_e_DCNv2_bspline",
+      "method": "bspline",
+      "backbone": "DCNv2",
+      "stage2_candidate": 5,
+      "params": {
+        "degree": 3,
+        "n_basis": 32
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7887283333333334
+    },
+    "Tuned_automl_e_DCNv2_narydis_full": {
+      "source": "V2_automl_e_DCNv2_narydis_full",
+      "method": "narydis_full",
+      "backbone": "DCNv2",
+      "stage2_candidate": 5,
+      "params": {
+        "attention_hidden_dims": [
+          80,
+          40
+        ],
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 12,
+        "min_temperature": 0.1,
+        "multiplier": 100,
+        "signed": true,
+        "ssl_hidden_dim": 64,
+        "ssl_max_samples": 512,
+        "ssl_temperature": 0.1,
+        "ssl_weight": 0.0,
+        "temperature": 1.0,
+        "temperature_decay": 5e-05
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7867688888888889
+    },
+    "Tuned_automl_e_DCNv2_deer": {
+      "source": "V2_automl_e_DCNv2_deer",
+      "method": "deer",
+      "backbone": "DCNv2",
+      "stage2_candidate": 6,
+      "params": {
+        "min_width": 0.0,
+        "n_bins": 16,
+        "width_temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7891087777777778
+    },
+    "Tuned_automl_e_DCNv2_dae": {
+      "source": "V2_automl_e_DCNv2_dae",
+      "method": "dae",
+      "backbone": "DCNv2",
+      "stage2_candidate": 2,
+      "params": {
+        "hidden_dim": 32,
+        "n_quantiles": 32,
+        "normalize_distances": false,
+        "temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7880690555555555
+    },
+    "Tuned_automl_e_DCNv2_daes_gate": {
+      "source": "V2_automl_e_DCNv2_daes_gate",
+      "method": "daes_gate",
+      "backbone": "DCNv2",
+      "stage2_candidate": 3,
+      "params": {
+        "beta": 0.2,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 10,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7889661111111111
+    },
+    "Tuned_automl_e_DCNv2_daes_tran": {
+      "source": "V2_automl_e_DCNv2_daes_tran",
+      "method": "daes_tran",
+      "backbone": "DCNv2",
+      "stage2_candidate": 2,
+      "params": {
+        "beta": 0.5,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 16,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7878491666666667
+    },
+    "Tuned_automl_e_AutoInt_field": {
+      "source": "V2_automl_e_AutoInt_field",
+      "method": "field",
+      "backbone": "AutoInt",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7869070555555555
+    },
+    "Tuned_automl_e_AutoInt_linear": {
+      "source": "V2_automl_e_AutoInt_linear",
+      "method": "linear",
+      "backbone": "AutoInt",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7878691666666666
+    },
+    "Tuned_automl_e_AutoInt_linear_relu": {
+      "source": "V2_automl_e_AutoInt_linear_relu",
+      "method": "linear_relu",
+      "backbone": "AutoInt",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7875715
+    },
+    "Tuned_automl_e_AutoInt_quantile_bucket": {
+      "source": "V2_automl_e_AutoInt_quantile_bucket",
+      "method": "quantile_bucket",
+      "backbone": "AutoInt",
+      "stage2_candidate": 0,
+      "params": {
+        "embedding_init_std": 1e-05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7881252222222223
+    },
+    "Tuned_automl_e_AutoInt_log_squared_bucket": {
+      "source": "V2_automl_e_AutoInt_log_squared_bucket",
+      "method": "log_squared_bucket",
+      "backbone": "AutoInt",
+      "stage2_candidate": 1,
+      "params": {
+        "embedding_init_std": 0.0001
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7749827777777778
+    },
+    "Tuned_automl_e_AutoInt_autodis": {
+      "source": "V2_automl_e_AutoInt_autodis",
+      "method": "autodis",
+      "backbone": "AutoInt",
+      "stage2_candidate": 3,
+      "params": {
+        "n_meta_embeddings": 16,
+        "residual_weight": 1.0,
+        "temperature": 0.05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7888263333333333
+    },
+    "Tuned_automl_e_AutoInt_ple_a": {
+      "source": "V2_automl_e_AutoInt_ple_a",
+      "method": "ple_a",
+      "backbone": "AutoInt",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "A"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7886427222222222
+    },
+    "Tuned_automl_e_AutoInt_ple_b": {
+      "source": "V2_automl_e_AutoInt_ple_b",
+      "method": "ple_b",
+      "backbone": "AutoInt",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7893172777777777
+    },
+    "Tuned_automl_e_AutoInt_ple_relu": {
+      "source": "V2_automl_e_AutoInt_ple_relu",
+      "method": "ple_relu",
+      "backbone": "AutoInt",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7879477222222222
+    },
+    "Tuned_automl_e_AutoInt_periodic": {
+      "source": "V2_automl_e_AutoInt_periodic",
+      "method": "periodic",
+      "backbone": "AutoInt",
+      "stage2_candidate": 0,
+      "params": {
+        "frequency_init_scale": 0.01,
+        "lite": false,
+        "n_frequencies": 8
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7883703888888889
+    },
+    "Tuned_automl_e_AutoInt_plr": {
+      "source": "V2_automl_e_AutoInt_plr",
+      "method": "plr",
+      "backbone": "AutoInt",
+      "stage2_candidate": 3,
+      "params": {
+        "embedding_init_std": 0.0001,
+        "frequency_init_scale": 0.05,
+        "lite": false,
+        "n_frequencies": 16
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7892539444444444
+    },
+    "Tuned_automl_e_AutoInt_narydis_lite": {
+      "source": "V2_automl_e_AutoInt_narydis_lite",
+      "method": "narydis_lite",
+      "backbone": "AutoInt",
+      "stage2_candidate": 7,
+      "params": {
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 16,
+        "multiplier": 100,
+        "pooling": "mean",
+        "signed": true
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7839723333333334
+    },
+    "Tuned_automl_e_AutoInt_bspline": {
+      "source": "V2_automl_e_AutoInt_bspline",
+      "method": "bspline",
+      "backbone": "AutoInt",
+      "stage2_candidate": 5,
+      "params": {
+        "degree": 3,
+        "n_basis": 32
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7887283333333334
+    },
+    "Tuned_automl_e_AutoInt_narydis_full": {
+      "source": "V2_automl_e_AutoInt_narydis_full",
+      "method": "narydis_full",
+      "backbone": "AutoInt",
+      "stage2_candidate": 5,
+      "params": {
+        "attention_hidden_dims": [
+          80,
+          40
+        ],
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 12,
+        "min_temperature": 0.1,
+        "multiplier": 100,
+        "signed": true,
+        "ssl_hidden_dim": 64,
+        "ssl_max_samples": 512,
+        "ssl_temperature": 0.1,
+        "ssl_weight": 0.0,
+        "temperature": 1.0,
+        "temperature_decay": 5e-05
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7867688888888889
+    },
+    "Tuned_automl_e_AutoInt_deer": {
+      "source": "V2_automl_e_AutoInt_deer",
+      "method": "deer",
+      "backbone": "AutoInt",
+      "stage2_candidate": 6,
+      "params": {
+        "min_width": 0.0,
+        "n_bins": 16,
+        "width_temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7891087777777778
+    },
+    "Tuned_automl_e_AutoInt_dae": {
+      "source": "V2_automl_e_AutoInt_dae",
+      "method": "dae",
+      "backbone": "AutoInt",
+      "stage2_candidate": 2,
+      "params": {
+        "hidden_dim": 32,
+        "n_quantiles": 32,
+        "normalize_distances": false,
+        "temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7880690555555555
+    },
+    "Tuned_automl_e_AutoInt_daes_gate": {
+      "source": "V2_automl_e_AutoInt_daes_gate",
+      "method": "daes_gate",
+      "backbone": "AutoInt",
+      "stage2_candidate": 3,
+      "params": {
+        "beta": 0.2,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 10,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7889661111111111
+    },
+    "Tuned_automl_e_AutoInt_daes_tran": {
+      "source": "V2_automl_e_AutoInt_daes_tran",
+      "method": "daes_tran",
+      "backbone": "AutoInt",
+      "stage2_candidate": 2,
+      "params": {
+        "beta": 0.5,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 16,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7878491666666667
+    },
+    "Tuned_automl_e_FiBiNET_field": {
+      "source": "V2_automl_e_FiBiNET_field",
+      "method": "field",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7869070555555555
+    },
+    "Tuned_automl_e_FiBiNET_linear": {
+      "source": "V2_automl_e_FiBiNET_linear",
+      "method": "linear",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7878691666666666
+    },
+    "Tuned_automl_e_FiBiNET_linear_relu": {
+      "source": "V2_automl_e_FiBiNET_linear_relu",
+      "method": "linear_relu",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 0,
+      "params": null,
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7875715
+    },
+    "Tuned_automl_e_FiBiNET_quantile_bucket": {
+      "source": "V2_automl_e_FiBiNET_quantile_bucket",
+      "method": "quantile_bucket",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 0,
+      "params": {
+        "embedding_init_std": 1e-05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7881252222222223
+    },
+    "Tuned_automl_e_FiBiNET_log_squared_bucket": {
+      "source": "V2_automl_e_FiBiNET_log_squared_bucket",
+      "method": "log_squared_bucket",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 1,
+      "params": {
+        "embedding_init_std": 0.0001
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7749827777777778
+    },
+    "Tuned_automl_e_FiBiNET_autodis": {
+      "source": "V2_automl_e_FiBiNET_autodis",
+      "method": "autodis",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 3,
+      "params": {
+        "n_meta_embeddings": 16,
+        "residual_weight": 1.0,
+        "temperature": 0.05
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7888263333333333
+    },
+    "Tuned_automl_e_FiBiNET_ple_a": {
+      "source": "V2_automl_e_FiBiNET_ple_a",
+      "method": "ple_a",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "A"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7886427222222222
+    },
+    "Tuned_automl_e_FiBiNET_ple_b": {
+      "source": "V2_automl_e_FiBiNET_ple_b",
+      "method": "ple_b",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7893172777777777
+    },
+    "Tuned_automl_e_FiBiNET_ple_relu": {
+      "source": "V2_automl_e_FiBiNET_ple_relu",
+      "method": "ple_relu",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 0,
+      "params": {
+        "version": "B"
+      },
+      "stage2_mean_validation_rank": 1.0,
+      "stage2_mean_validation_auc": 0.7879477222222222
+    },
+    "Tuned_automl_e_FiBiNET_periodic": {
+      "source": "V2_automl_e_FiBiNET_periodic",
+      "method": "periodic",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 0,
+      "params": {
+        "frequency_init_scale": 0.01,
+        "lite": false,
+        "n_frequencies": 8
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7883703888888889
+    },
+    "Tuned_automl_e_FiBiNET_plr": {
+      "source": "V2_automl_e_FiBiNET_plr",
+      "method": "plr",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 3,
+      "params": {
+        "embedding_init_std": 0.0001,
+        "frequency_init_scale": 0.05,
+        "lite": false,
+        "n_frequencies": 16
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7892539444444444
+    },
+    "Tuned_automl_e_FiBiNET_narydis_lite": {
+      "source": "V2_automl_e_FiBiNET_narydis_lite",
+      "method": "narydis_lite",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 7,
+      "params": {
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 16,
+        "multiplier": 100,
+        "pooling": "mean",
+        "signed": true
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7839723333333334
+    },
+    "Tuned_automl_e_FiBiNET_bspline": {
+      "source": "V2_automl_e_FiBiNET_bspline",
+      "method": "bspline",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 5,
+      "params": {
+        "degree": 3,
+        "n_basis": 32
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7887283333333334
+    },
+    "Tuned_automl_e_FiBiNET_narydis_full": {
+      "source": "V2_automl_e_FiBiNET_narydis_full",
+      "method": "narydis_full",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 5,
+      "params": {
+        "attention_hidden_dims": [
+          80,
+          40
+        ],
+        "bases": [
+          2,
+          3,
+          5,
+          7,
+          10
+        ],
+        "max_digits": 12,
+        "min_temperature": 0.1,
+        "multiplier": 100,
+        "signed": true,
+        "ssl_hidden_dim": 64,
+        "ssl_max_samples": 512,
+        "ssl_temperature": 0.1,
+        "ssl_weight": 0.0,
+        "temperature": 1.0,
+        "temperature_decay": 5e-05
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7867688888888889
+    },
+    "Tuned_automl_e_FiBiNET_deer": {
+      "source": "V2_automl_e_FiBiNET_deer",
+      "method": "deer",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 6,
+      "params": {
+        "min_width": 0.0,
+        "n_bins": 16,
+        "width_temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.1666666666666667,
+      "stage2_mean_validation_auc": 0.7891087777777778
+    },
+    "Tuned_automl_e_FiBiNET_dae": {
+      "source": "V2_automl_e_FiBiNET_dae",
+      "method": "dae",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 2,
+      "params": {
+        "hidden_dim": 32,
+        "n_quantiles": 32,
+        "normalize_distances": false,
+        "temperature": 1.0
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7880690555555555
+    },
+    "Tuned_automl_e_FiBiNET_daes_gate": {
+      "source": "V2_automl_e_FiBiNET_daes_gate",
+      "method": "daes_gate",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 3,
+      "params": {
+        "beta": 0.2,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 10,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.5,
+      "stage2_mean_validation_auc": 0.7889661111111111
+    },
+    "Tuned_automl_e_FiBiNET_daes_tran": {
+      "source": "V2_automl_e_FiBiNET_daes_tran",
+      "method": "daes_tran",
+      "backbone": "FiBiNET",
+      "stage2_candidate": 2,
+      "params": {
+        "beta": 0.5,
+        "embedding_init_std": 0.0001,
+        "n_context_fields": 3,
+        "n_meta_embeddings": 16,
+        "quantile_refresh_interval": 100,
+        "reservoir_size": 100000
+      },
+      "stage2_mean_validation_rank": 1.3333333333333333,
+      "stage2_mean_validation_auc": 0.7878491666666667
+    }
+  }
+}
