@@ -1,4 +1,4 @@
-"""Render the frozen benchmark matrix into the repository README.
+"""Render the completed five-seed benchmark matrix into the repository README.
 
 The marked README block is generated from summary.csv, never hand-edited.
 Use --check in CI to detect drift without changing files.
@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 README = ROOT / "README.md"
-SUMMARY = ROOT / "reproduction/results/tuned_accuracy/summary.csv"
+SUMMARY = ROOT / "reproduction/results/five_seed_20260924/summary.csv"
 START = "<!-- BENCHMARK_RESULTS_START -->"
 END = "<!-- BENCHMARK_RESULTS_END -->"
 DATASETS = ("Criteo", "AutoML-A", "AutoML-E")
@@ -29,8 +29,8 @@ def load_rows():
         rows = list(csv.DictReader(handle))
     expected = {(d, b, m) for d in DATASETS for b in BACKBONES for m in METHODS}
     found = {(r["dataset"], r["backbone"], r["method"]) for r in rows}
-    if len(rows) != 486 or found != expected or any(r["n_seeds"] != "3" for r in rows):
-        raise ValueError("Frozen result matrix must contain exactly 486 unique three-seed cells")
+    if len(rows) != 486 or found != expected or any(r["n_seeds"] != "5" for r in rows):
+        raise ValueError("Published result matrix must contain exactly 486 unique five-seed cells")
     return {(r["dataset"], r["backbone"], r["method"]): r for r in rows}
 
 
@@ -49,9 +49,9 @@ def matrix(rows, dataset, metric):
 def render(rows):
     parts = [
         START,
-        "## Frozen benchmark results",
+        "## Five-seed benchmark results",
         "",
-        "The tables report **test AUC** and **test logloss** as mean ± standard deviation over seeds 2026/2027/2028; higher AUC and lower logloss are better. Each cell is a separately trained method–backbone–dataset combination. These are the tuned shared-z-score V2 results, not the earlier raw-feature matrix. The training protocol is identical across methods within a dataset/backbone; method-specific settings are frozen in the supplied configurations. No values are pooled across different datasets or backbones.",
+        "The tables report **test AUC** and **test logloss** as mean ± sample standard deviation over seeds 2026–2030; higher AUC and lower logloss are better. Each cell is a separately trained method–backbone–dataset combination. These are the tuned shared-z-score V2 results, not the earlier raw-feature matrix. The training protocol is identical across methods within a dataset/backbone; method-specific settings are frozen in the supplied configurations. No values are pooled across different datasets or backbones. The original 2026–2028 records are preserved separately; the 2029–2030 extension was rerun using the reorganized repository and strictly validated before merging.",
         "",
     ]
     for dataset in DATASETS:
@@ -69,7 +69,7 @@ def render(rows):
             "",
         ])
     parts.extend([
-        "The [per-seed records](reproduction/results/tuned_accuracy/per_seed.csv) contain all 1,458 individual runs, including validation metrics, best/stopping epoch and elapsed time. The [full-precision summary](reproduction/results/tuned_accuracy/summary.csv) includes both test metrics, ranks and Field deltas. See the [protocol](docs/PROTOCOL.md) and [fidelity notes](docs/BASELINE_PROVENANCE.md) before interpreting differences as a property of the original papers.",
+        "The [five-seed records](reproduction/results/five_seed_20260924/per_seed.csv) contain all 2,430 individual runs; the [full-precision summary](reproduction/results/five_seed_20260924/summary.csv) includes both test metrics, ranks and Field deltas. The [original three-seed records](reproduction/results/tuned_accuracy/per_seed.csv), including best/stopping epoch and elapsed time, remain unchanged. See the [five-seed analysis](reproduction/results/five_seed_20260924/summary.md), [protocol](docs/PROTOCOL.md), and [fidelity notes](docs/BASELINE_PROVENANCE.md) before interpreting differences as a property of the original papers.",
         END,
     ])
     return "\n".join(parts)
@@ -87,11 +87,11 @@ def main():
     updated = before + render(load_rows()) + after
     if args.check:
         if updated != content:
-            raise SystemExit("README result tables differ from frozen summary.csv")
-        print("README result tables match frozen summary.csv")
+            raise SystemExit("README result tables differ from five-seed summary.csv")
+        print("README result tables match five-seed summary.csv")
     else:
         README.write_text(updated, encoding="utf-8")
-        print("Updated README result tables from frozen summary.csv")
+        print("Updated README result tables from five-seed summary.csv")
 
 
 if __name__ == "__main__":

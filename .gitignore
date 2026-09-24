@@ -13,6 +13,9 @@ datasets/
 data/
 runs/
 outputs/
+reproduction/analysis_outputs/
+reproduction/figures/
+reproduction/reproduced/
 *.model
 *.parquet
 *.npz

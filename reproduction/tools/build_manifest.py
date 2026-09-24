@@ -26,7 +26,7 @@ def main() -> None:
         if not path.is_file() or path.name in EXCLUDED or path.name.startswith("._"):
             continue
         relative = path.relative_to(ROOT)
-        if any(part in {"reproduced", "analysis_outputs", "figures", "outputs", ".venv"} for part in relative.parts):
+        if any(part in {".git", "reproduced", "analysis_outputs", "figures", "outputs", ".venv"} for part in relative.parts):
             continue
         if "__pycache__" in relative.parts or path.suffix == ".pyc":
             continue

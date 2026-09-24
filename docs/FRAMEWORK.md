@@ -32,15 +32,15 @@ copy, independent of a globally installed RTDL package.
 
 | Backbone | Source file |
 |---|---|
-| DNN | `backbone/DNN/DNN_torch/src/DNN.py` |
-| DeepFM | `backbone/DeepFM/DeepFM_torch/src/DeepFM.py` |
-| WideDeep | `backbone/WideDeep/WideDeep_torch/src/WideDeep.py` |
-| NFM | `backbone/NFM/src/NFM.py` |
-| PNN | `backbone/PNN/src/PNN.py` |
-| DCN | `backbone/DCN/DCN_torch/src/DCN.py` |
-| DCNv2 | `backbone/DCNv2/src/DCNv2.py` |
-| AutoInt | `backbone/AutoInt/src/AutoInt.py` |
-| FiBiNET | `backbone/FiBiNET/src/FiBiNET.py` |
+| DNN | `backbone/DNN/DNN.py` |
+| DeepFM | `backbone/DeepFM/DeepFM.py` |
+| WideDeep | `backbone/WideDeep/WideDeep.py` |
+| NFM | `backbone/NFM/NFM.py` |
+| PNN | `backbone/PNN/PNN.py` |
+| DCN | `backbone/DCN/DCN.py` |
+| DCNv2 | `backbone/DCNv2/DCNv2.py` |
+| AutoInt | `backbone/AutoInt/AutoInt.py` |
+| FiBiNET | `backbone/FiBiNET/FiBiNET.py` |
 
 The bundled framework is the supported route. If a project must use an
 **external** FuxiCTR checkout, pin it to 2.3.10 and compare the *entire*

@@ -14,15 +14,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 BACKBONES = {
-    "DNN": "DNN/DNN_torch/src/DNN.py",
-    "DeepFM": "DeepFM/DeepFM_torch/src/DeepFM.py",
-    "WideDeep": "WideDeep/WideDeep_torch/src/WideDeep.py",
-    "NFM": "NFM/src/NFM.py",
-    "PNN": "PNN/src/PNN.py",
-    "DCN": "DCN/DCN_torch/src/DCN.py",
-    "DCNv2": "DCNv2/src/DCNv2.py",
-    "AutoInt": "AutoInt/src/AutoInt.py",
-    "FiBiNET": "FiBiNET/src/FiBiNET.py",
+    "DNN": "DNN/DNN.py",
+    "DeepFM": "DeepFM/DeepFM.py",
+    "WideDeep": "WideDeep/WideDeep.py",
+    "NFM": "NFM/NFM.py",
+    "PNN": "PNN/PNN.py",
+    "DCN": "DCN/DCN.py",
+    "DCNv2": "DCNv2/DCNv2.py",
+    "AutoInt": "AutoInt/AutoInt.py",
+    "FiBiNET": "FiBiNET/FiBiNET.py",
 }
 
 

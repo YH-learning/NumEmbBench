@@ -8,6 +8,13 @@ cells**. The authoritative frozen protocol is
 the YAML files in the adjacent dataset folders specify backbone- and
 method-specific details.
 
+The completed five-seed extension adds seeds 2029 and 2030 using the same
+frozen configurations, for 972 additional tasks and 2,430 total runs. Its
+versioned outputs are under `reproduction/results/five_seed_20260924/`;
+the original three-seed matrix remains intact under
+`reproduction/results/tuned_accuracy/`. The five-seed ranking is derived
+from all five seed outcomes, not from a mixture of three- and five-seed cells.
+
 | Fixed setting | Value |
 |---|---|
 | Numerical embedding output dimension | 16 |

@@ -1,0 +1,9 @@
+{
+  "test": "Friedman test over 27 dataset-backbone blocks",
+  "blocks": 27,
+  "methods": 18,
+  "statistic": 157.03768680961662,
+  "p_value": 1.0180845153965253e-24,
+  "posthoc_reference": "deer",
+  "posthoc": "paired two-sided Wilcoxon signed-rank with Holm correction"
+}

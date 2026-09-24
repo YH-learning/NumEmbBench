@@ -29,8 +29,8 @@ class definitions are AST-identical to the frozen implementation in
 `reproduction/legacy/source/numerical_embeddings.py`; the test in
 `tests/test_method_sources.py` enforces this. The new registry supports only
 the 17 implementation names needed by the **18 evaluated configurations**.
-Exploratory DEER and ScalarLens variants remain in the legacy archive and
-are not silently exposed as benchmark baselines.
+Exploratory variants are excluded from this benchmark release and are not
+silently exposed as baselines.
 
 DAES uses the categorical context fields specified by the frozen YAML. In
 this benchmark reproduction, selected categorical embeddings are mean-pooled

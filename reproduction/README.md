@@ -26,10 +26,9 @@ python reproduction/analysis/summarize_efficiency.py
 ```
 
 Outputs are written under `reproduction/analysis_outputs/` and
-`reproduction/figures/`; frozen measurement inputs under `results/`
-remain unchanged. `legacy/run_full_matrix_legacy.py` is retained as a historical
-launcher record. New training should use `reproduction/tools/run_benchmark.py` from the
-repository root instead.
+`reproduction/figures/`; these generated directories are not tracked. Frozen
+measurement inputs under `results/` remain unchanged. New training uses
+`reproduction/tools/run_benchmark.py` from the repository root.
 
 The native-scale and shared-z-score records represent **different dataset
 protocols**. The tuned accuracy and efficiency records also come from

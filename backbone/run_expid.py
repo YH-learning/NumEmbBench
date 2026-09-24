@@ -36,23 +36,7 @@ def resolve_model_class(model_name):
 
     if not str(model_name).isidentifier():
         raise ValueError(f"Invalid model name: {model_name!r}")
-    model_path = (
-        FUXICTR_ROOT
-        / "backbone"
-        / model_name
-        / f"{model_name}_torch"
-        / "src"
-        / f"{model_name}.py"
-    )
-    if not model_path.is_file():
-        flat_model_path = (
-            FUXICTR_ROOT
-            / "backbone"
-            / model_name
-            / "src"
-            / f"{model_name}.py"
-        )
-        model_path = flat_model_path if flat_model_path.is_file() else model_path
+    model_path = FUXICTR_ROOT / "backbone" / model_name / f"{model_name}.py"
     if not model_path.is_file():
         raise AttributeError(
             f"Model {model_name!r} is not among the bundled backbones at {model_path}"
